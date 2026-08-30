@@ -19,7 +19,7 @@ function calculateTax(price, taxRate) {
 function calculateFinalPrice(price, discount, taxRate) {
     const discountedPrice = calculateDiscountedPrice(price, discount);
     const taxAmount = calculateTax(discountedPrice, taxRate);
-    return discountedPrice + taxAmount;
+    return discountedPrice + taxAmount; 
 }
 
 // isFreeShipping(finalPrice) function

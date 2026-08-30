@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CartNest | Everyday shopping, made simple</title>
+    <meta name="description" content="A modern online shopping cart storefront.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg main-nav py-3">
+            <div class="container-xl">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <span class="brand-mark"><i class="bi bi-bag-heart-fill"></i></span>
+                    <span>cart<span class="brand-accent">nest</span></span>
+                </a>
+                <form class="search-box d-flex order-lg-2 mx-lg-4 my-3 my-lg-0" role="search">
+                    <i class="bi bi-search"></i>
+                    <input class="form-control" type="search" placeholder="Search for products, brands and more"
+                        aria-label="Search">
+                    <button class="search-button" type="submit">Search</button>
+                </form>
+                <div class="nav-actions order-lg-3 d-flex align-items-center gap-3">
+                    <a class="nav-link account-link" href="#account"><i class="bi bi-person me-1"></i> Account</a>
+                    <a class="cart-link" href="#cart" aria-label="Shopping cart"><i class="bi bi-cart3"></i><span
+                            class="cart-count">3</span></a>
+                </div>
+            </div>
+        </nav>
+        <div class="category-bar">
+            <div class="container-xl d-flex justify-content-between align-items-center gap-3 overflow-auto">
+                <a href="#electronics"><i class="bi bi-phone"></i><span>Electronics</span></a>
+                <a href="#fashion"><i class="bi bi-stars"></i><span>Fashion</span></a>
+                <a href="#home"><i class="bi bi-lamp"></i><span>Home & Living</span></a>
+                <a href="#beauty"><i class="bi bi-droplet"></i><span>Beauty</span></a>
+                <a href="#grocery"><i class="bi bi-basket"></i><span>Grocery</span></a>
+                <a href="#travel"><i class="bi bi-airplane"></i><span>Travel</span></a>
+                <a href="#deals" class="deal-link"><i class="bi bi-lightning-charge-fill"></i><span>Top Deals</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container-xl mt-4">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> Fresh picks for you</p>
+                <h1>Good things,<br><em>better prices.</em></h1>
+                <p class="hero-text">Make room for a little more joy. Explore handpicked essentials, clever tech and
+                    everyday upgrades.</p>
+                <a href="#deals" class="btn btn-dark hero-button">Shop today's deals <i
+                        class="bi bi-arrow-up-right"></i></a>
+                <div class="hero-note"><i class="bi bi-truck"></i><span>Free delivery on orders over ₹499</span></div>
+            </div>
+            <div class="hero-art">
+                <div class="hero-tag"><strong>UP TO</strong><b>70%</b><span>OFF</span></div>
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1100&q=85"
+                    alt="Shopping bags and a card on a sunny table">
+                <div class="hero-caption"><span>Weekend edit</span><i class="bi bi-arrow-right"></i></div>
+            </div>
+        </section>
+
+        <section class="container-xl section-space" id="deals">
+            <div class="section-heading d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <p class="eyebrow"><span></span> Curated for you</p>
+                    <h2>Trending right now</h2>
+                </div>
+                <a href="#all-products" class="text-link">View all <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+            <div class="row g-3 g-lg-4">
+                <article class="col-6 col-lg-3" id="electronics">
+                    <div class="product-card">
+                        <div class="product-image"><span class="offer-badge">32% OFF</span><img
+                                src="https://images.unsplash.com/photo-1600086827875-a63b01f1335c?auto=format&fit=crop&w=700&q=80"
+                                alt="Wireless headphones"></div>
+                        <div class="product-info">
+                            <p class="product-type">Sound & tech</p>
+                            <h3>Airbeat Wireless Headphones</h3>
+                            <div class="rating"><span>4.6 <i class="bi bi-star-fill"></i></span><small>2,481
+                                    ratings</small></div>
+                            <p class="price">₹2,499 <del>₹3,699</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart
+                                <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image"><span class="offer-badge">28% OFF</span><img
+                                src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=700&q=80"
+                                alt="Smart watch"></div>
+                        <div class="product-info">
+                            <p class="product-type">Smart tech</p>
+                            <h3>Pulse Smart Watch</h3>
+                            <div class="rating"><span>4.5 <i class="bi bi-star-fill"></i></span><small>1,208
+                                    ratings</small></div>
+                            <p class="price">₹2,899 <del>₹3,999</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image blue"><span class="offer-badge">35% OFF</span><img
+                                src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=700&q=80"
+                                alt="White earbuds"></div>
+                        <div class="product-info">
+                            <p class="product-type">Audio</p>
+                            <h3>Cloud Buds Pro</h3>
+                            <div class="rating"><span>4.3 <i class="bi bi-star-fill"></i></span><small>856
+                                    ratings</small></div>
+                            <p class="price">₹1,799 <del>₹2,799</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3" id="fashion">
+                    <div class="product-card">
+                        <div class="product-image warm"><span class="offer-badge">48% OFF</span><img
+                                src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=700&q=80"
+                                alt="Neutral fashion clothing"></div>
+                        <div class="product-info">
+                            <p class="product-type">Style studio</p>
+                            <h3>Relaxed Linen Overshirt</h3>
+                            <div class="rating"><span>4.4 <i class="bi bi-star-fill"></i></span><small>982
+                                    ratings</small></div>
+                            <p class="price">₹1,299 <del>₹2,499</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart
+                                <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image warm"><span class="offer-badge">40% OFF</span><img
+                                src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=700&q=80"
+                                alt="Fashion outfit"></div>
+                        <div class="product-info">
+                            <p class="product-type">New season</p>
+                            <h3>Everyday Cotton Co-ord</h3>
+                            <div class="rating"><span>4.5 <i class="bi bi-star-fill"></i></span><small>654
+                                    ratings</small></div>
+                            <p class="price">₹1,499 <del>₹2,499</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image warm"><span class="offer-badge">30% OFF</span><img
+                                src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=80"
+                                alt="Folded denim jeans"></div>
+                        <div class="product-info">
+                            <p class="product-type">Denim edit</p>
+                            <h3>Classic Straight Jeans</h3>
+                            <div class="rating"><span>4.6 <i class="bi bi-star-fill"></i></span><small>1,031
+                                    ratings</small></div>
+                            <p class="price">₹1,099 <del>₹1,599</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3" id="home">
+                    <div class="product-card">
+                        <div class="product-image green"><span class="offer-badge">25% OFF</span><img
+                                src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=80"
+                                alt="Minimal desk lamp on a table"></div>
+                        <div class="product-info">
+                            <p class="product-type">Home office</p>
+                            <h3>Arc Table Lamp, Olive</h3>
+                            <div class="rating"><span>4.8 <i class="bi bi-star-fill"></i></span><small>1,106
+                                    ratings</small></div>
+                            <p class="price">₹899 <del>₹1,199</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image green"><span class="offer-badge">22% OFF</span><img
+                                src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=700&q=80"
+                                alt="Wooden side table"></div>
+                        <div class="product-info">
+                            <p class="product-type">Living room</p>
+                            <h3>Oak Side Table</h3>
+                            <div class="rating"><span>4.7 <i class="bi bi-star-fill"></i></span><small>412
+                                    ratings</small></div>
+                            <p class="price">₹1,899 <del>₹2,449</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image green"><span class="offer-badge">18% OFF</span><img
+                                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=700&q=80"
+                                alt="Modern chair"></div>
+                        <div class="product-info">
+                            <p class="product-type">Furniture</p>
+                            <h3>Cloud Lounge Chair</h3>
+                            <div class="rating"><span>4.4 <i class="bi bi-star-fill"></i></span><small>287
+                                    ratings</small></div>
+                            <p class="price">₹4,499 <del>₹5,499</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3" id="beauty">
+                    <div class="product-card">
+                        <div class="product-image blue"><span class="offer-badge">20% OFF</span><img
+                                src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=700&q=80"
+                                alt="Skincare bottles"></div>
+                        <div class="product-info">
+                            <p class="product-type">Self care</p>
+                            <h3>Daily Glow Skincare Set</h3>
+                            <div class="rating"><span>4.5 <i class="bi bi-star-fill"></i></span><small>743
+                                    ratings</small></div>
+                            <p class="price">₹1,599 <del>₹1,999</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart
+                                <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image blue"><span class="offer-badge">24% OFF</span><img
+                                src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=700&q=80"
+                                alt="Moisturizer and skincare"></div>
+                        <div class="product-info">
+                            <p class="product-type">Skin essentials</p>
+                            <h3>Hydra Face Cream</h3>
+                            <div class="rating"><span>4.6 <i class="bi bi-star-fill"></i></span><small>918
+                                    ratings</small></div>
+                            <p class="price">₹699 <del>₹899</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image blue"><span class="offer-badge">15% OFF</span><img
+                                src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=700&q=80"
+                                alt="Perfume bottle"></div>
+                        <div class="product-info">
+                            <p class="product-type">Fragrance</p>
+                            <h3>Sunday Citrus Eau de Parfum</h3>
+                            <div class="rating"><span>4.5 <i class="bi bi-star-fill"></i></span><small>602
+                                    ratings</small></div>
+                            <p class="price">₹1,199 <del>₹1,399</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3" id="grocery">
+                    <div class="product-card">
+                        <div class="product-image warm"><span class="offer-badge">10% OFF</span><img
+                                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=80"
+                                alt="Fresh vegetables"></div>
+                        <div class="product-info">
+                            <p class="product-type">Fresh pantry</p>
+                            <h3>Organic Farm Veggie Box</h3>
+                            <div class="rating"><span>4.8 <i class="bi bi-star-fill"></i></span><small>329
+                                    ratings</small></div>
+                            <p class="price">₹449 <del>₹499</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image warm"><span class="offer-badge">16% OFF</span><img
+                                src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=700&q=80"
+                                alt="Coffee beans and cup"></div>
+                        <div class="product-info">
+                            <p class="product-type">Breakfast</p>
+                            <h3>Roast No. 4 Coffee Beans</h3>
+                            <div class="rating"><span>4.7 <i class="bi bi-star-fill"></i></span><small>771
+                                    ratings</small></div>
+                            <p class="price">₹599 <del>₹715</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image green"><span class="offer-badge">12% OFF</span><img
+                                src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80"
+                                alt="Pasta and ingredients"></div>
+                        <div class="product-info">
+                            <p class="product-type">Pantry staples</p>
+                            <h3>Sunday Pasta Pantry Kit</h3>
+                            <div class="rating"><span>4.6 <i class="bi bi-star-fill"></i></span><small>438
+                                    ratings</small></div>
+                            <p class="price">₹799 <del>₹899</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3" id="travel">
+                    <div class="product-card">
+                        <div class="product-image blue"><span class="offer-badge">26% OFF</span><img
+                                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80"
+                                alt="Travel backpack"></div>
+                        <div class="product-info">
+                            <p class="product-type">Travel gear</p>
+                            <h3>Move Light Travel Backpack</h3>
+                            <div class="rating"><span>4.7 <i class="bi bi-star-fill"></i></span><small>1,145
+                                    ratings</small></div>
+                            <p class="price">₹1,899 <del>₹2,599</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image blue"><span class="offer-badge">20% OFF</span><img
+                                src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=700&q=80"
+                                alt="Tropical beach destination"></div>
+                        <div class="product-info">
+                            <p class="product-type">Getaways</p>
+                            <h3>Coastal Escape Weekend Stay</h3>
+                            <div class="rating"><span>4.8 <i class="bi bi-star-fill"></i></span><small>236
+                                    ratings</small></div>
+                            <p class="price">₹6,999 <del>₹8,799</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-image warm"><span class="offer-badge">30% OFF</span><img
+                                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=700&q=80"
+                                alt="Mountain road travel destination"></div>
+                        <div class="product-info">
+                            <p class="product-type">Experiences</p>
+                            <h3>Mountain Trail Explorer Pass</h3>
+                            <div class="rating"><span>4.5 <i class="bi bi-star-fill"></i></span><small>184
+                                    ratings</small></div>
+                            <p class="price">₹2,499 <del>₹3,599</del></p><a href="#cart-modal" class="add-button">Add to
+                                cart <i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-section container-xl section-space" id="about">
+            <div class="about-copy">
+                <p class="eyebrow"><span></span> Shopping, with a little more care</p>
+                <h2>Everyday finds.<br><em>Thoughtfully chosen.</em></h2>
+                <p>CartNest brings useful products, honest prices and dependable delivery into one calm, easy-to-browse
+                    place. From first click to front door, we keep the experience simple.</p>
+                <a href="#contact" class="text-link">Learn more about us <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+            <div class="about-points">
+                <div><i class="bi bi-shield-check"></i><span><strong>Trusted quality</strong><small>Products worth
+                            bringing home</small></span></div>
+                <div><i class="bi bi-box-seam"></i><span><strong>Easy delivery</strong><small>Fast, trackable and
+                            reliable</small></span></div>
+                <div><i class="bi bi-headset"></i><span><strong>Real support</strong><small>Here when you need
+                            us</small></span></div>
+            </div>
+        </section>
+
+        <section class="container-xl section-space" id="cart">
+            <div class="cart-panel row g-0">
+                <div class="col-lg-7 cart-items">
+                    <div class="section-heading mb-4">
+                        <p class="eyebrow"><span></span> Ready when you are</p>
+                        <h2>Your cart <small>(3 items)</small></h2>
+                    </div>
+                    <div class="cart-item"><img
+                            src="https://images.unsplash.com/photo-1600086827875-a63b01f1335c?auto=format&fit=crop&w=220&q=80"
+                            alt="Wireless headphones">
+                        <div class="cart-item-name">
+                            <h3>Airbeat Wireless Headphones</h3>
+                            <p>Midnight black</p>
+                        </div>
+                        <div class="quantity">− <b>1</b> +</div><strong>₹2,499</strong>
+                    </div>
+                    <div class="cart-item"><img
+                            src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=220&q=80"
+                            alt="Table lamp">
+                        <div class="cart-item-name">
+                            <h3>Arc Table Lamp</h3>
+                            <p>Olive green</p>
+                        </div>
+                        <div class="quantity">− <b>1</b> +</div><strong>₹899</strong>
+                    </div>
+                    <div class="cart-item"><img
+                            src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=220&q=80"
+                            alt="Skincare set">
+                        <div class="cart-item-name">
+                            <h3>Daily Glow Skincare Set</h3>
+                            <p>For normal skin</p>
+                        </div>
+                        <div class="quantity">− <b>1</b> +</div><strong>₹1,599</strong>
+                    </div>
+                </div>
+                <aside class="col-lg-5 order-first order-lg-last price-panel">
+                    <h3>Price details</h3>
+                    <div class="price-line"><span>Price (3 items)</span><span>₹4,997</span></div>
+                    <div class="price-line"><span>Discount</span><span class="savings">− ₹1,500</span></div>
+                    <div class="price-line"><span>Delivery charges</span><span class="savings">FREE</span></div>
+                    <hr>
+                    <div class="total-line"><span>Total amount</span><strong>₹3,497</strong></div>
+                    <p class="save-note"><i class="bi bi-patch-check-fill"></i> You saved ₹1,500 on this order</p><a
+                        href="#checkout" class="checkout-button">Proceed to checkout <i
+                            class="bi bi-arrow-right"></i></a>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <div class="cart-modal" id="cart-modal" aria-label="Added to cart confirmation">
+        <div class="cart-modal-backdrop"></div>
+        <div class="cart-modal-card" role="dialog" aria-modal="true" aria-labelledby="cart-modal-title">
+            <a href="#" class="modal-close" aria-label="Close"><i class="bi bi-x-lg"></i></a>
+            <div class="modal-check"><i class="bi bi-check-lg"></i></div>
+            <p class="eyebrow"><span></span> Cart updated</p>
+            <h2 id="cart-modal-title">Added to your cart</h2>
+            <p class="modal-copy">Nice choice. Your product has been added and is ready whenever you are.</p>
+            <div class="modal-actions"><a href="#cart" class="checkout-button">View cart <i
+                        class="bi bi-arrow-right"></i></a><a href="#deals" class="modal-continue">Continue shopping</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="container-xl">
+            <div class="footer-grid">
+                <div class="footer-intro"><span class="footer-brand">cart<span>nest</span></span>
+                    <p>Thoughtful shopping for everyday life.</p><a
+                        href="mailto:hello@cartnest.in">hello@cartnest.in</a>
+                </div>
+                <div>
+                    <h3>Customer care</h3><a href="#cart">Track your order</a><a href="#returns">Returns & refunds</a><a
+                        href="#help">Help centre</a>
+                </div>
+                <div>
+                    <h3>CartNest</h3><a href="#about">About us</a><a href="#deals">Top deals</a><a
+                        href="#careers">Careers</a>
+                </div>
+                <div>
+                    <h3>Contact us</h3>
+                    <p><i class="bi bi-telephone"></i> 1800 123 4567</p>
+                    <p><i class="bi bi-clock"></i> Mon-Sat, 9am-6pm</p>
+                    <div class="social-links"><a href="#instagram" aria-label="Instagram"><i
+                                class="bi bi-instagram"></i></a><a href="#facebook" aria-label="Facebook"><i
+                                class="bi bi-facebook"></i></a><a href="#twitter" aria-label="Twitter"><i
+                                class="bi bi-twitter-x"></i></a></div>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 CartNest. All rights reserved.</span><span>Made for better everyday
+                    shopping.</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>

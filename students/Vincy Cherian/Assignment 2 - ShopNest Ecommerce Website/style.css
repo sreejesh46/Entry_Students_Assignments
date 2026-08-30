@@ -1,0 +1,485 @@
+*{
+    box-sizing : border-box;
+}
+
+body{
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* NavBar */
+
+#shopnest-navbar{
+    background-color :blanchedalmond;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+
+.navbar-brand img{
+    width: 300px;
+    height: 120px;
+}
+
+.nav-link{
+    font-weight: 500;
+    margin-left: 16px;
+}
+
+.nav-link:hover{
+    background-color: coral;
+}
+
+.nav-item{
+    margin-right: 20px;
+}
+
+#ShopNest-cart{
+    color: black;
+    font-size: 20px;
+}
+
+#search-icon
+{
+    color: black;
+    font-size: 20px;
+    margin-left: 16px;
+}
+
+/* Carousel */
+
+#carousel_1{
+    background-image: url("./Images/Carousel-1.png");
+    width : 100%;
+    height : 330px;
+}
+
+.carousel-begin-content{
+    margin-left:  180px;
+    margin-top: 80px;
+    font-weight: 700;
+}
+
+.carousel-content-main{
+    margin-left:  180px;
+    font-weight: bolder;
+    color: coral;
+    font-size: 2em ;
+    line-height: 1em;
+}
+
+.carousel-content-sub{
+    margin-left:  180px;
+}
+
+#carousel_2{
+    background-image: url("./Images/Carousel-2.png");
+    width : 100%;
+    height : 330px;
+}
+
+#carousel_3{
+    background-image: url("./Images/carousel-3.png");
+    width : 100%;
+    height : 330px;
+}
+
+#shopnow{
+    background-color: black;
+    color: white;
+    margin-left:  180px;
+    border-radius: 5px;
+}
+
+#shopnow:hover{
+     background-color: rgb(12, 109, 244);
+}
+
+#explorenow{
+    background-color: black;
+    color: white;
+    margin-left:  180px;
+    border-radius: 5px;
+}
+
+#explorenow:hover{
+     background-color: rgb(12, 109, 244);
+}
+
+#view_deal{
+    background-color: black;
+    color: white;
+    margin-left:  180px;
+    border-radius: 5px;
+}
+
+#view_deal:hover{
+     background-color: rgb(12, 109, 244);
+}
+
+
+aside{
+    background-color: coral;
+    font-weight: 500;
+    font-size: larger;
+    line-height: 3em;
+}
+
+
+/* Featured Products && Browse by Category */
+
+#featured_pdts{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.card{
+    text-align : center;
+    justify-content: center;
+}
+
+.card:hover{
+    background-color: cadetblue;
+    border: 3px solid cadetblue ;
+}
+
+.feat-pdt-img{
+    width : 100px;
+    height: 250px;
+}
+
+.featured-pdt-row{
+    margin-bottom: 16px;
+}
+
+.bi-star-fill{
+    color:coral;
+}
+
+
+/* Newsletter Section */
+
+.newsltr-section{
+    background-color: rgb(116, 98, 151);
+    margin-top: 50px;
+    height : 250px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#newsletter-title{
+    margin: 30px;
+    color: white;
+}
+
+#newsltr-items{
+    gap:8px;
+}
+
+#email_id_label{
+    color: white;
+}
+
+#cust_email_id{
+    margin-left: 10px;
+}
+
+#btn-subscribe{
+    margin-left: 16px;
+}
+
+
+/* Footer */
+
+.footer-section{
+    padding: 50px 10px;
+    background-color: rgb(203, 201, 201);
+    gap: 20px;
+    text-align:center;
+}
+
+.footer-nav-link{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+
+.footer-nav-link:hover{
+    color:coral;
+}
+
+
+#about-title{
+    text-align: center;
+}
+
+#about-dtl{
+    text-align: justify;
+}
+
+
+#footer-links{
+    list-style-type: none;
+    display: block;
+    padding-left: 0px;
+}
+
+.social-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#quick_link, #about-title, #contact-title, #social-heading{
+    padding-bottom: 15px;
+}
+
+
+
+/* Modal - Login */
+
+#loginModal{
+    text-align:center;
+}
+
+#loginModal .modal-header{
+    background-color: blanchedalmond;
+}
+
+#forgot-pwd{
+    text-decoration: none;
+}
+
+#forgot-pwd:hover{
+    color: coral;
+}
+
+#new_account{
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+#new_account:hover{
+    color: coral;
+}
+
+/* Responsiveness */
+
+
+@media (max-width: 768px){
+
+ /* Navbar */
+
+.navbar-toggler{
+    margin-right: 10px;
+}
+
+ /* Carousel */
+#carousel_1{
+    background-image: url("./Images/Carousel-1.png");
+    background-size: 768px 250px ;
+    width : 100%;
+    height : 250px;
+}
+
+.carousel-begin-content{
+    margin-left:  80px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.carousel-content-main{
+    margin-left:  80px;
+    font-weight: bolder;
+    color: coral;
+    font-size: 1.5em ;
+    line-height: 1em;
+}
+
+.carousel-content-sub{
+    margin-left:  80px;
+    color: blue;
+}
+
+#carousel_2{
+    background-image: url("./Images/Carousel-2.png");
+    background-size: 768px 250px ;
+    width : 100%;
+    height : 250px;
+}
+
+#carousel_3{
+    background-image: url("./Images/carousel-3.png");
+    background-size: 768px 250px ;
+    width : 100%;
+    height : 250px;
+}
+
+#shopnow{
+    background-color: black;
+    color: white;
+    margin-left:  80px;
+    border-radius: 5px;
+}
+
+#shopnow:hover{
+     background-color: rgb(12, 109, 244);
+}
+
+#explorenow{
+    background-color: black;
+    color: white;
+    margin-left:  80px;
+    border-radius: 5px;
+}
+
+#explorenow:hover{
+     background-color: rgb(12, 109, 244);
+}
+
+#view_deal{
+    background-color: black;
+    color: white;
+    margin-left:  80px;
+    border-radius: 5px;
+}
+
+#view_deal:hover{
+     background-color: rgb(12, 109, 244);
+}
+
+/* Featured Product card */
+
+.card-img-top {
+    width : 400px;
+}
+
+.feat-pdt-img {
+    height : 350px;
+}
+
+
+/* Footer */
+
+/* #about-dtl
+{
+    text-align: justify;
+    width: 300px;
+    margin-left: 200px;
+} */
+
+}
+
+@media (max-width: 567px){
+
+ /* Navbar */
+
+.navbar-toggler{
+    margin-right: 10px;
+}
+
+ /* Carousel */
+#carousel_1{
+    background-image: url("./Images/Carousel-1.png");
+    background-size: 567px 250px ;
+    width : 100%;
+    height : 250px;
+}
+
+.carousel-begin-content{
+    margin-left:  80px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.carousel-content-main{
+    margin-left:  80px;
+    font-weight: bolder;
+    color: coral;
+    font-size: 1.5em ;
+    line-height: 1em;
+}
+
+.carousel-content-sub{
+    margin-left:  80px;
+    color: blue;
+}
+
+#carousel_2{
+    background-image: url("./Images/Carousel-2.png");
+    background-size: 567px 250px ;
+    width : 100%;
+    height : 250px;
+}
+
+#carousel_3{
+    background-image: url("./Images/carousel-3.png");
+    background-size: 567px 250px ;
+    width : 100%;
+    height : 250px;
+}
+
+#shopnow{
+    background-color: black;
+    color: white;
+    margin-left:  80px;
+    border-radius: 5px;
+}
+
+#shopnow:hover{
+     background-color: rgb(12, 109, 244);
+}
+
+#explorenow{
+    background-color: black;
+    color: white;
+    margin-left:  80px;
+    border-radius: 5px;
+}
+
+#explorenow:hover{
+     background-color: rgb(12, 109, 244);
+}
+
+#view_deal{
+    background-color: black;
+    color: white;
+    margin-left:  80px;
+    border-radius: 5px;
+}
+
+#view_deal:hover{
+     background-color: rgb(12, 109, 244);
+}
+
+/* Featured Product card */
+
+.card-img-top {
+    width : 400px;
+}
+
+.feat-pdt-img {
+    height : 350px;
+}
+
+/* Footer */
+
+/* #about-dtl
+{
+    text-align: justify;
+    width: 300px;
+    margin-left: 200px;
+} */
+
+
+
+
+}
+

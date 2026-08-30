@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNest — Curated for comfort.</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-shopnest py-3">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center shadow-sm" style="width: 40px; height: 40px;">
+                        <i class="bi bi-house-heart-fill"></i>
+                    </div>
+                    <span class="brand-font fs-4 text-dark mb-0">ShopNest</span>
+                </a>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+                        <li class="nav-item"><a class="nav-link fw-semibold text-dark active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fw-medium text-secondary hover-primary" href="#shop">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link fw-medium text-secondary hover-primary" href="#collections">Collections</a></li>
+                        <li class="nav-item"><a class="nav-link fw-medium text-secondary hover-primary" href="#about">About Us</a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="input-group d-none d-xl-flex shadow-sm rounded-pill" style="width: 240px;">
+                            <input type="text" class="form-control search-pill form-control-sm border-0" placeholder="Find quality goods...">
+                        </div>
+                        <a href="#cart" class="position-relative text-dark text-decoration-none p-2 transition-transform hover-scale">
+                            <i class="bi bi-bag fs-5"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary shadow-sm" style="font-size: 0.7rem; padding: 0.35em 0.6em;">
+                                2
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-section text-center text-lg-start position-relative">
+            <div class="container position-relative z-1">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 mx-auto mx-lg-0">
+                        <span class="badge bg-primary text-white px-3 py-2 rounded-pill mb-4 fw-medium shadow-sm" style="letter-spacing: 0.5px;">Curated for comfort.</span>
+                        <h1 class="display-4 fw-bold mb-4 text-white" style="line-height: 1.2;">Shopping, Curated for Comfort.</h1>
+                        <p class="lead text-light opacity-85 mb-5 fw-normal" style="max-width: 600px;">Discover a clutter-free marketplace of handpicked lifestyle essentials, transparent pricing, and effortless express delivery.</p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                            <a href="#shop" class="btn btn-warm-amber shadow">Shop Now</a>
+                            <a href="#collections" class="btn btn-outline-custom">View Deals</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="py-5 my-5">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-end mb-5 gap-3">
+                    <div>
+                        <span class="text-uppercase text-primary fw-bold fs-6" style="letter-spacing: 2px;">The Nest Selection</span>
+                        <h2 class="fw-bold mb-0 mt-2 display-6">Featured Essentials</h2>
+                    </div>
+                    <a href="#" class="text-decoration-none fw-semibold text-primary d-inline-flex align-items-center gap-1 transition-all">
+                        View All Goods <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="product-card p-3 h-100 d-flex flex-column">
+                            <div class="position-relative mb-4 img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=600" class="img-fluid w-100 object-fit-cover" style="height: 260px;" alt="Acoustic Comfort Headset">
+                                <span class="position-absolute top-0 end-0 m-3 badge bg-white text-dark shadow-sm rounded-pill px-3 py-2 fw-semibold">Save $30</span>
+                            </div>
+                            <div class="mb-2 text-warning fs-6">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                <span class="text-muted ms-1 small fw-medium text-dark">(4.8)</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2 text-dark">Acoustic Comfort Headset</h3>
+                            <p class="text-muted small mb-4 lh-base">Ergonomic design engineered for long listening and remote sanctuary focus.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto border-top pt-3">
+                                <div>
+                                    <span class="text-muted text-decoration-line-through small me-2">$179.00</span>
+                                    <span class="fw-bold text-primary fs-5">$149.00</span>
+                                </div>
+                                <button class="btn btn-sm btn-outline-dark rounded-pill px-4 py-2 fw-medium btn-add-cart">
+                                    <i class="bi bi-bag-plus me-1"></i> Add
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="product-card p-3 h-100 d-flex flex-column">
+                            <div class="position-relative mb-4 img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=600" class="img-fluid w-100 object-fit-cover" style="height: 260px;" alt="Minimalist Chronograph">
+                                <span class="position-absolute top-0 end-0 m-3 badge bg-success text-white shadow-sm rounded-pill px-3 py-2 fw-semibold">New</span>
+                            </div>
+                            <div class="mb-2 text-warning fs-6">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                <span class="text-muted ms-1 small fw-medium text-dark">(5.0)</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2 text-dark">Minimalist Chronograph Watch</h3>
+                            <p class="text-muted small mb-4 lh-base">Pure stainless steel face with organic leather strap for understated elegance.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto border-top pt-3">
+                                <div>
+                                    <span class="fw-bold text-primary fs-5">$210.00</span>
+                                </div>
+                                <button class="btn btn-sm btn-outline-dark rounded-pill px-4 py-2 fw-medium btn-add-cart">
+                                    <i class="bi bi-bag-plus me-1"></i> Add
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="product-card p-3 h-100 d-flex flex-column">
+                            <div class="position-relative mb-4 img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=600" class="img-fluid w-100 object-fit-cover" style="height: 260px;" alt="Cloud Walk Sneakers">
+                                <span class="position-absolute top-0 end-0 m-3 badge bg-white text-dark shadow-sm rounded-pill px-3 py-2 fw-semibold">Best Seller</span>
+                            </div>
+                            <div class="mb-2 text-warning fs-6">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                <span class="text-muted ms-1 small fw-medium text-dark">(4.6)</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2 text-dark">Cloud Walk Sneakers</h3>
+                            <p class="text-muted small mb-4 lh-base">Featherlight recycled textiles tailored for urban transit and everyday stride.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto border-top pt-3">
+                                <div>
+                                    <span class="text-muted text-decoration-line-through small me-2">$130.00</span>
+                                    <span class="fw-bold text-primary fs-5">$98.00</span>
+                                </div>
+                                <button class="btn btn-sm btn-outline-dark rounded-pill px-4 py-2 fw-medium btn-add-cart">
+                                    <i class="bi bi-bag-plus me-1"></i> Add
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="product-card p-3 h-100 d-flex flex-column">
+                            <div class="position-relative mb-4 img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&q=80&w=600" class="img-fluid w-100 object-fit-cover" style="height: 260px;" alt="Smart Home Hub">
+                            </div>
+                            <div class="mb-2 text-warning fs-6">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                <span class="text-muted ms-1 small fw-medium text-dark">(4.7)</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2 text-dark">Nest Ambient Controller</h3>
+                            <p class="text-muted small mb-4 lh-base">Centralized home climate and lighting control with responsive matte finish.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto border-top pt-3">
+                                <span class="fw-bold text-primary fs-5">$125.00</span>
+                                <button class="btn btn-sm btn-outline-dark rounded-pill px-4 py-2 fw-medium btn-add-cart"><i class="bi bi-bag-plus me-1"></i> Add</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="product-card p-3 h-100 d-flex flex-column">
+                            <div class="position-relative mb-4 img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=600" class="img-fluid w-100 object-fit-cover" style="height: 260px;" alt="Hardcover Edition">
+                            </div>
+                            <div class="mb-2 text-warning fs-6">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                <span class="text-muted ms-1 small fw-medium text-dark">(4.9)</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2 text-dark">Architectural Spaces Vol. IV</h3>
+                            <p class="text-muted small mb-4 lh-base">Curated photo compendium focusing on calm architecture and natural light.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto border-top pt-3">
+                                <span class="fw-bold text-primary fs-5">$65.00</span>
+                                <button class="btn btn-sm btn-outline-dark rounded-pill px-4 py-2 fw-medium btn-add-cart"><i class="bi bi-bag-plus me-1"></i> Add</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="product-card p-3 h-100 d-flex flex-column">
+                            <div class="position-relative mb-4 img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&q=80&w=600" class="img-fluid w-100 object-fit-cover" style="height: 260px;" alt="Cashmere Knit">
+                            </div>
+                            <div class="mb-2 text-warning fs-6">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                <span class="text-muted ms-1 small fw-medium text-dark">(4.4)</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2 text-dark">Merino Wool Lounge Crew</h3>
+                            <p class="text-muted small mb-4 lh-base">Sustainably sourced yarn structured for supreme everyday relaxation.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-auto border-top pt-3">
+                                <span class="fw-bold text-primary fs-5">$110.00</span>
+                                <button class="btn btn-sm btn-outline-dark rounded-pill px-4 py-2 fw-medium btn-add-cart"><i class="bi bi-bag-plus me-1"></i> Add</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collections" class="py-5" style="background-color: #fff;">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <span class="text-uppercase text-primary fw-bold fs-6" style="letter-spacing: 2px;">Browse by Category</span>
+                    <h2 class="fw-bold mt-2 display-6">Explore Our Sanctuaries</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-6 col-lg-3">
+                        <div class="category-tile p-5 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                            <div class="category-icon bg-white p-4 rounded-circle shadow-sm mb-4 text-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-cpu fs-2"></i>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2 text-dark">Electronics</h3>
+                            <p class="text-muted small mb-0">Smart tech & audio</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="category-tile p-5 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                            <div class="category-icon bg-white p-4 rounded-circle shadow-sm mb-4 text-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-shirt fs-2"></i>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2 text-dark">Clothing</h3>
+                            <p class="text-muted small mb-0">Comfort apparel</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="category-tile p-5 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                            <div class="category-icon bg-white p-4 rounded-circle shadow-sm mb-4 text-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-box-seam fs-2"></i>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2 text-dark">Footwear</h3>
+                            <p class="text-muted small mb-0">Steps made light</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="category-tile p-5 text-center h-100 d-flex flex-column align-items-center justify-content-center">
+                            <div class="category-icon bg-white p-4 rounded-circle shadow-sm mb-4 text-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-book fs-2"></i>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2 text-dark">Books</h3>
+                            <p class="text-muted small mb-0">Inspiration & design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="py-5 bg-white border-top border-bottom position-relative overflow-hidden">
+            <div class="container py-5 position-relative z-1">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-6">
+                        <span class="badge bg-primary text-white rounded-pill px-3 py-2 mb-3 fw-medium shadow-sm" style="letter-spacing: 0.5px;">Join the Nest</span>
+                        <h3 class="fw-bold mb-3 display-6">10% Off Your First Order</h3>
+                        <p class="text-muted mb-4 fs-5" style="max-width: 500px; margin: 0 auto;">Subscribe to receive curated drops, quiet design thoughts, and special member access.</p>
+                        <form class="input-group mb-3 shadow-sm rounded-pill p-1 bg-white border" style="max-width: 450px; margin: 0 auto;">
+                            <input type="email" class="form-control border-0 rounded-pill py-2 ps-4" placeholder="Enter your email address..." required style="box-shadow: none; outline: none;">
+                            <button class="btn btn-warm-amber rounded-pill px-4 m-1" type="submit">Subscribe</button>
+                        </form>
+                        <small class="text-muted fw-medium"><i class="bi bi-shield-check me-1"></i> No clutter, zero spam. Unsubscribe anytime.</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative background elements -->
+            <div class="position-absolute top-0 start-0 translate-middle rounded-circle" style="width: 300px; height: 300px; background-color: rgba(224, 122, 95, 0.05); z-index: 0;"></div>
+            <div class="position-absolute bottom-0 end-0 translate-middle-y rounded-circle" style="width: 200px; height: 200px; background-color: rgba(129, 178, 154, 0.05); z-index: 0; margin-right: -100px;"></div>
+        </aside>
+
+    </main>
+
+    <footer id="about" class="pt-5 pb-4">
+        <div class="container py-4">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4 pe-lg-5">
+                    <div class="d-flex align-items-center gap-2 mb-4">
+                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;">
+                            <i class="bi bi-house-heart-fill"></i>
+                        </div>
+                        <span class="brand-font fs-4 text-white">ShopNest</span>
+                    </div>
+                    <p class="text-secondary mb-4 lh-lg">The warm, digital-first sanctuary for curated lifestyle shopping. Zero clutter, 100% quality-vetted goods.</p>
+                    <div class="social-icons d-flex gap-3 fs-5">
+                        <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-secondary"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" class="text-secondary"><i class="bi bi-pinterest"></i></a>
+                        <a href="#" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white fs-6 mb-4 fw-bold tracking-wider text-uppercase" style="letter-spacing: 1px;">Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li><a href="#">Shop All</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <h5 class="text-white fs-6 mb-4 fw-bold tracking-wider text-uppercase" style="letter-spacing: 1px;">Support Hub</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li><a href="mailto:support@shopnest.com" class="d-flex align-items-center gap-2"><i class="bi bi-envelope"></i> support@shopnest.com</a></li>
+                        <li><a href="tel:+18005550199" class="d-flex align-items-center gap-2"><i class="bi bi-telephone"></i> +1 (800) 555-0199</a></li>
+                        <li class="text-secondary mt-2 lh-base"><i class="bi bi-geo-alt me-2 text-white"></i>Thirumala<br><span class="ms-4">Trivandrum, Kerala </span></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="text-white fs-6 mb-4 fw-bold tracking-wider text-uppercase" style="letter-spacing: 1px;">Nest Guarantee</h5>
+                    <p class="text-secondary lh-lg mb-0">Every item passing through ShopNest is vetted for longevity, ethical manufacture, and zero-waste packaging protocols.</p>
+                </div>
+            </div>
+
+            <hr class="border-secondary opacity-25 my-4">
+
+            <div class="row align-items-center justify-content-between pt-2">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-secondary small mb-0">&copy; 2026 ShopNest. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#" class="small text-secondary me-4">Privacy Policy</a>
+                    <a href="#" class="small text-secondary">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

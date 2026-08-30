@@ -1,0 +1,70 @@
+:root {
+  --accent: #f6d7b8;
+  --text: #2f2a26;
+  --muted: #7a716c;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5, .brand-text {
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  letter-spacing: 0.04em;
+}
+
+.bg-accent {
+  background-color: var(--accent) !important;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #fffaf5 0%, #fef7ec 100%);
+}
+
+.hero-image,
+.product-image {
+  object-fit: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.bg-soft {
+  background-color: #fcf7f2;
+}
+
+.category-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.05);
+}
+
+.category-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-image {
+    height: 280px;
+  }
+}

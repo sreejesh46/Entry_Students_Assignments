@@ -1,0 +1,2318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNest - Online Shopping</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- =====================================================
+         HEADER
+    ===================================================== -->
+
+    <header>
+
+        <div class="top-navbar">
+
+            <div class="container">
+
+                <div class="nav-wrapper">
+
+                    <div class="logo-wrapper">
+                        <a href="#" class="logo">
+                            Shop<span>Nest</span>
+                        </a>
+
+                        <div class="tagline">
+                            Explore Plus
+                        </div>
+                    </div>
+
+                    <div class="search-box">
+
+                        <input type="search" placeholder="Search for products, brands and more">
+
+                        <button class="search-btn">
+                            <i class="bi bi-search"></i>
+                        </button>
+
+                    </div>
+
+                    <nav class="desktop-nav">
+
+                        <label for="login-toggle" class="login-link">
+                            Login
+                        </label>
+
+                        <div class="more-dropdown">
+
+                            <span class="more-link">
+                                More
+                                <i class="bi bi-chevron-down"></i>
+                            </span>
+
+                            <div class="more-menu">
+
+                                <a href="#">
+                                    <i class="bi bi-shop"></i>
+                                    Become a Seller
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-headset"></i>
+                                    24 × 7 Customer Support
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-phone"></i>
+                                    Download App
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-bell"></i>
+                                    Notifications
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-gift"></i>
+                                    My Offers
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <label for="cart-toggle" class="cart-link">
+                            <i class="bi bi-cart3"></i>
+                        </label>
+
+                    </nav>
+
+                    <label for="menu-toggle" class="menu-icon">
+                        <i class="bi bi-list"></i>
+                    </label>
+
+                </div>
+
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+                <div class="mobile-menu">
+
+                    <label for="login-toggle" class="mobile-login">
+                        <i class="bi bi-person me-2"></i>
+                        Login
+                    </label>
+
+                    <a href="#electronics">Electronics</a>
+                    <a href="#appliances">TVs & Appliances</a>
+                    <a href="#men">Men</a>
+                    <a href="#women">Women</a>
+                    <a href="#kids">Kids</a>
+                    <a href="#footwear">Footwear</a>
+                    <a href="#books">Books</a>
+                    <a href="#home">Home</a>
+                    <a href="#beauty">Beauty</a>
+                    <a href="#grocery">Grocery</a>
+
+                    <label for="cart-toggle" class="mobile-login">
+                        <i class="bi bi-cart3 me-2"></i>
+                        Cart
+                    </label>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- CATEGORY BAR -->
+
+        <div class="category-bar">
+
+            <div class="container">
+
+                <nav class="category-list">
+
+                    <a href="#electronics">Electronics</a>
+                    <a href="#appliances">TVs & Appliances</a>
+                    <a href="#men">Men</a>
+                    <a href="#women">Women</a>
+                    <a href="#kids">Kids</a>
+                    <a href="#footwear">Footwear</a>
+                    <a href="#books">Books</a>
+                    <a href="#home">Home</a>
+                    <a href="#beauty">Beauty</a>
+                    <a href="#grocery">Grocery</a>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         LOGIN
+    ===================================================== -->
+
+    <input type="checkbox" id="login-toggle" class="login-toggle">
+
+    <div class="login-overlay">
+
+        <div class="login-modal">
+
+            <label for="login-toggle" class="login-close">
+                &times;
+            </label>
+
+            <div class="login-left">
+
+                <div>
+
+                    <h2>Login</h2>
+
+                    <p>
+                        Get access to your Orders,
+                        Wishlist and personalised
+                        recommendations.
+                    </p>
+
+                </div>
+
+                <div class="login-illustration">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+
+            </div>
+
+            <div class="login-right">
+
+                <h2 class="login-title">
+                    Welcome Back!
+                </h2>
+
+                <p class="login-subtitle">
+                    Login to continue shopping on ShopNest
+                </p>
+
+                <form>
+
+                    <div class="login-group">
+
+                        <label>
+                            Email / Mobile Number
+                        </label>
+
+                        <input type="text" placeholder="Enter email or mobile number" required>
+
+                    </div>
+
+                    <div class="login-group">
+
+                        <label>
+                            Password
+                        </label>
+
+                        <input type="password" placeholder="Enter your password" required>
+
+                    </div>
+
+                    <div class="login-options">
+
+                        <label>
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+
+                        <a href="#" class="forgot-password">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+                    <button class="login-button">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        Login
+                    </button>
+
+                </form>
+
+                <div class="login-or">
+                    OR
+                </div>
+
+                <div class="create-account">
+                    New to ShopNest?
+                    <a href="#">
+                        Create an account
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CART
+    ===================================================== -->
+
+    <input type="checkbox" id="cart-toggle" class="cart-toggle">
+
+    <div class="cart-overlay">
+
+        <div class="cart-modal">
+
+            <div class="cart-header">
+
+                <div class="cart-title">
+                    <i class="bi bi-cart3"></i>
+                    My Cart
+                </div>
+
+                <label for="cart-toggle" class="cart-close">
+                    &times;
+                </label>
+
+            </div>
+
+            <div class="empty-cart">
+
+                <div class="empty-cart-icon">
+                    <i class="bi bi-cart-x"></i>
+                </div>
+
+                <h3>
+                    Your Cart is Empty
+                </h3>
+
+                <p>
+                    Add products to your cart
+                    and they will appear here.
+                </p>
+
+                <label for="cart-toggle" class="continue-shopping">
+                    Continue Shopping
+                </label>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         ADD TO CART SUCCESS
+    ===================================================== -->
+
+    <input type="checkbox" id="cart-product-toggle" class="cart-product-toggle">
+
+    <div class="cart-success-overlay">
+
+        <div class="success-modal">
+
+            <div class="success-icon">
+                <i class="bi bi-check-lg"></i>
+            </div>
+
+            <h3>
+                Added to Cart!
+            </h3>
+
+            <p>
+                Your product has been added successfully.
+            </p>
+
+            <label for="cart-product-toggle" class="success-close">
+                Continue Shopping
+            </label>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         HERO
+    ===================================================== -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <h1>
+                    Big Shopping Days
+                </h1>
+
+                <p>
+                    Discover amazing products,
+                    exclusive deals and unbeatable
+                    prices at ShopNest.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#featured" class="btn-shop">
+                        Shop Now
+                    </a>
+
+                    <a href="#electronics" class="btn-deals">
+                        View Deals
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FEATURED PRODUCTS
+    ===================================================== -->
+
+    <section class="section" id="featured">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Featured Products
+            </h2>
+
+            <p class="section-subtitle">
+                Best picks and trending products for you
+            </p>
+
+            <div class="product-grid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="./images/headphones.avif" alt="Headphones">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Premium Wireless Headphones
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹4,999</span>
+                            <span class="new-price">₹2,999</span>
+                            <span class="discount">40% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            <i class="bi bi-cart-plus"></i>
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="./images/watch.avif" alt="Watch">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Premium Smart Watch
+                        </div>
+
+                        <div class="rating">
+                            4.5 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹5,999</span>
+                            <span class="new-price">₹3,499</span>
+                            <span class="discount">42% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            <i class="bi bi-cart-plus"></i>
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="./images/shoes.avif" alt="Shoes">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Men's Running Shoes
+                        </div>
+
+                        <div class="rating">
+                            4.7 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹3,999</span>
+                            <span class="new-price">₹2,199</span>
+                            <span class="discount">45% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            <i class="bi bi-cart-plus"></i>
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="./images/coffee.avif" alt="Coffee">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Premium Coffee Maker
+                        </div>
+
+                        <div class="rating">
+                            4.4 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹6,999</span>
+                            <span class="new-price">₹4,299</span>
+                            <span class="discount">39% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            <i class="bi bi-cart-plus"></i>
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 5 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="./images/camera.avif" alt="Camera">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Digital Mirrorless Camera
+                        </div>
+
+                        <div class="rating">
+                            4.9 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹49,999</span>
+                            <span class="new-price">₹39,999</span>
+                            <span class="discount">20% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            <i class="bi bi-cart-plus"></i>
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 6 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="./images/bheadphones.avif" alt="Laptop">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Slim Performance Laptop
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹79,999</span>
+                            <span class="new-price">₹64,999</span>
+                            <span class="discount">19% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            <i class="bi bi-cart-plus"></i>
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ELECTRONICS
+    ===================================================== -->
+
+    <section class="category-section" id="electronics">
+
+        <div class="container">
+
+            <div class="category-heading">
+                <h2>Electronics</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/console.avif" alt="Gaming Console">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Gaming Console
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹49,999</span>
+                            <span class="new-price">₹42,999</span>
+                            <span class="discount">14% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/phone.avif" alt="Smartphone">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Smartphone
+                        </div>
+
+                        <div class="rating">
+                            4.5 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹29,999</span>
+                            <span class="new-price">₹23,999</span>
+                            <span class="discount">20% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/laptop.avif" alt="Laptop">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Business Laptop
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹69,999</span>
+                            <span class="new-price">₹57,999</span>
+                            <span class="discount">17% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/tv.avif" alt="Television">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            4K LED Television
+                        </div>
+
+                        <div class="rating">
+                            4.4 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹59,999</span>
+                            <span class="new-price">₹39,999</span>
+                            <span class="discount">33% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/bheadphones.avif" alt="Speaker">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Bluetooth Speaker
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹4,999</span>
+                            <span class="new-price">₹2,999</span>
+                            <span class="discount">40% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/earbuds.avif" alt="Earbuds">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Wireless Earbuds
+                        </div>
+
+                        <div class="rating">
+                            4.5 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹3,999</span>
+                            <span class="new-price">₹1,999</span>
+                            <span class="discount">50% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TV & APPLIANCES
+    ===================================================== -->
+
+    <section class="category-section" id="appliances">
+
+        <div class="container">
+
+            <div class="category-heading">
+                <h2>TVs & Appliances</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/ledtv.avif" alt="Smart LED TV">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Smart LED TV
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹54,999</span>
+                            <span class="new-price">₹39,999</span>
+                            <span class="discount">27% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/modernwashingmachine.avif" alt="Washing Machine">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Modern Washing Machine
+                        </div>
+
+                        <div class="rating">
+                            4.5 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹34,999</span>
+                            <span class="new-price">₹27,999</span>
+                            <span class="discount">20% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/mixer.avif" alt="Microwave">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Mixer
+                        </div>
+
+                        <div class="rating">
+                            4.4 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹14,999</span>
+                            <span class="new-price">₹9,999</span>
+                            <span class="discount">33% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/fridge.avif" alt="Refrigerator">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Refrigerator
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹45,999</span>
+                            <span class="new-price">₹34,999</span>
+                            <span class="discount">24% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/air.jpg" alt="Air Conditioner">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Air Conditioner
+                        </div>
+
+                        <div class="rating">
+                            4.5 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹49,999</span>
+                            <span class="new-price">₹38,999</span>
+                            <span class="discount">22% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/hometheater.avif" alt="Home Theater">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Home Theater
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹24,999</span>
+                            <span class="new-price">₹17,999</span>
+                            <span class="discount">28% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MEN
+    ===================================================== -->
+
+    <section class="category-section" id="men">
+
+        <div class="container">
+
+            <div class="category-heading">
+                <h2>Men</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/men.avif" alt="T Shirt">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Men's Cotton T-Shirt
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹1,499</span>
+                            <span class="new-price">₹799</span>
+                            <span class="discount">47% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/shirts.avif" alt="Casual Shirt">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Men's Casual Shirt
+                        </div>
+
+                        <div class="rating">
+                            4.5 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹2,499</span>
+                            <span class="new-price">₹1,299</span>
+                            <span class="discount">48% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/jeans.avif" alt="Denim Jeans">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Men's Denim Jeans
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹2,999</span>
+                            <span class="new-price">₹1,699</span>
+                            <span class="discount">43% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/jacket.avif" alt="Jacket">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Men's Jacket
+                        </div>
+
+                        <div class="rating">
+                            4.5 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹4,999</span>
+                            <span class="new-price">₹2,999</span>
+                            <span class="discount">40% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/formalwear.avif" alt="Formal Wear">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Men's Formal Wear
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹5,999</span>
+                            <span class="new-price">₹3,999</span>
+                            <span class="discount">33% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/glasses.jpg" alt="Sunglasses">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Men's Sunglasses
+                        </div>
+
+                        <div class="rating">
+                            4.5 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹1,999</span>
+                            <span class="new-price">₹999</span>
+                            <span class="discount">50% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WOMEN
+    ===================================================== -->
+
+    <section class="category-section" id="women">
+
+        <div class="container">
+
+            <div class="category-heading">
+                <h2>Women</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/womandress.webp" alt="Fashion Dress">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Women's Fashion Dress
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹3,999</span>
+                            <span class="new-price">₹2,299</span>
+                            <span class="discount">43% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/ffrock.webp" alt="Women's Top">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Women's Top
+                        </div>
+
+                        <div class="rating">
+                            4.5 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹1,999</span>
+                            <span class="new-price">₹999</span>
+                            <span class="discount">50% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/jacket.avif" alt="Women's Jacket">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Women's Jacket
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹4,499</span>
+                            <span class="new-price">₹2,799</span>
+                            <span class="discount">38% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/handbag.avif" alt="Handbag">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Women's Handbag
+                        </div>
+
+                        <div class="rating">
+                            4.5 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹3,999</span>
+                            <span class="new-price">₹1,999</span>
+                            <span class="discount">50% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/formalwear.avif" alt="Casual Wear">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Women's Casual Wear
+                        </div>
+
+                        <div class="rating">
+                            4.8 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹2,999</span>
+                            <span class="new-price">₹1,699</span>
+                            <span class="discount">43% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img src="./images/womancollectiions.avif" alt="Fashion Collection">
+                    </div>
+
+                    <div class="product-info">
+
+                        <div class="product-name">
+                            Women's Fashion Collection
+                        </div>
+
+                        <div class="rating">
+                            4.5 ★
+                        </div>
+
+                        <div class="price">
+                            <span class="old-price">₹5,999</span>
+                            <span class="new-price">₹3,499</span>
+                            <span class="discount">42% off</span>
+                        </div>
+
+                        <label for="cart-product-toggle" class="add-cart">
+                            Add to Cart
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         KIDS
+    ===================================================== -->
+
+    <section class="category-section" id="kids">
+
+        <div class="container">
+
+            <div class="category-heading">
+                <h2>Kids</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/kidsshirts.avif" alt="Kids T Shirt">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kids Casual T-Shirt</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹999</span>
+                            <span class="new-price">₹499</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/kidsfashiiondress.avif" alt="Kids Dress">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kids Fashion Dress</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹1,999</span>
+                            <span class="new-price">₹999</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/kidswinterwear.avif" alt="Kids Winter Wear">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kids Winter Wear</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹2,999</span>
+                            <span class="new-price">₹1,599</span>
+                            <span class="discount">47% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/kidsshoes.avif" alt="Kids Shoes">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kids Shoes</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹1,999</span>
+                            <span class="new-price">₹999</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/kidsbackpacks.avif" alt="Kids Backpack">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kids Backpack</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹1,499</span>
+                            <span class="new-price">₹799</span>
+                            <span class="discount">47% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/kidsttoysets.jpg" alt="Kids Toy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kids Toy Set</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹1,999</span>
+                            <span class="new-price">₹899</span>
+                            <span class="discount">55% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTWEAR
+    ===================================================== -->
+
+    <section class="category-section" id="footwear">
+
+        <div class="container">
+
+            <div class="category-heading">
+                <h2>Footwear</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/shoesrunning.avif" alt="Running Shoes">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Sports Running Shoes</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹3,999</span>
+                            <span class="new-price">₹2,199</span>
+                            <span class="discount">45% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/sandals.avif" alt="Women's Sandals">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Women's Sandals</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹1,999</span>
+                            <span class="new-price">₹999</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/sneakers.avif" alt="Classic Sneakers">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Classic Sneakers</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹3,499</span>
+                            <span class="new-price">₹1,899</span>
+                            <span class="discount">46% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/casualsneakers.avif" alt="Casual Sneakers">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Casual Sneakers</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹2,999</span>
+                            <span class="new-price">₹1,499</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/formalshoes.avif" alt="Formal Shoes">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Leather Formal Shoes</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹4,999</span>
+                            <span class="new-price">₹2,999</span>
+                            <span class="discount">40% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/comforytshoees.avif" alt="Sports Shoes">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Comfort Sports Shoes</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹3,299</span>
+                            <span class="new-price">₹1,799</span>
+                            <span class="discount">45% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BOOKS
+    ===================================================== -->
+
+    <section class="category-section" id="books">
+
+        <div class="container">
+
+            <div class="category-heading">
+                <h2>Books</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/book1.avif" alt="Book">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">The Great Adventure</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹699</span>
+                            <span class="new-price">₹399</span>
+                            <span class="discount">43% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/book2.avif" alt="Business Book">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Business Success Guide</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹799</span>
+                            <span class="new-price">₹449</span>
+                            <span class="discount">44% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/book5.avif" alt="Literature">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Classic Literature</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹599</span>
+                            <span class="new-price">₹299</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/book4.avif" alt="Self Development">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Self Development Book</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹899</span>
+                            <span class="new-price">₹499</span>
+                            <span class="discount">44% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/book5.avif" alt="Encyclopedia">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Knowledge Encyclopedia</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹1,299</span>
+                            <span class="new-price">₹799</span>
+                            <span class="discount">38% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/book6.avif" alt="Children Book">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Children's Story Book</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹499</span>
+                            <span class="new-price">₹249</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         HOME
+    ===================================================== -->
+
+    <section class="category-section" id="home">
+
+        <div class="container">
+
+            <div class="category-heading">
+                <h2>Home</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/home1.avif" alt="Sofa">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Modern Sofa</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹39,999</span>
+                            <span class="new-price">₹28,999</span>
+                            <span class="discount">28% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/home2.avif" alt="Bed">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Modern Bed</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹44,999</span>
+                            <span class="new-price">₹32,999</span>
+                            <span class="discount">27% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/home3.avif" alt="Table">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Living Room Table</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹12,999</span>
+                            <span class="new-price">₹7,999</span>
+                            <span class="discount">38% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/home4.avif" alt="Chair">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Comfort Chair</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹8,999</span>
+                            <span class="new-price">₹5,499</span>
+                            <span class="discount">39% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/home5.avif" alt="Lamp">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Modern Table Lamp</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹2,999</span>
+                            <span class="new-price">₹1,499</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/home6.avif" alt="Desk">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Office Desk</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹14,999</span>
+                            <span class="new-price">₹9,999</span>
+                            <span class="discount">33% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BEAUTY
+    ===================================================== -->
+
+    <section class="category-section" id="beauty">
+
+        <div class="container">
+
+            <div class="category-heading">
+                <h2>Beauty</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/beauty1.avif" alt="Makeup Kit">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Beauty Makeup Kit</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹2,999</span>
+                            <span class="new-price">₹1,599</span>
+                            <span class="discount">47% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/beauty2.avif" alt="Skin Care">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Skin Care Collection</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹2,499</span>
+                            <span class="new-price">₹1,399</span>
+                            <span class="discount">44% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/beauty3.avif" alt="Hair Care">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Hair Care Products</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹1,999</span>
+                            <span class="new-price">₹999</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/beauty4.avif" alt="Lipstick">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Lipstick Collection</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹1,499</span>
+                            <span class="new-price">₹799</span>
+                            <span class="discount">47% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/beauty5.avif" alt="Cosmetics">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Premium Cosmetics</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹3,999</span>
+                            <span class="new-price">₹2,199</span>
+                            <span class="discount">45% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/beauty6.avif" alt="Beauty Set">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Natural Beauty Set</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹2,999</span>
+                            <span class="new-price">₹1,699</span>
+                            <span class="discount">43% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         GROCERY
+    ===================================================== -->
+
+    <section class="category-section" id="grocery">
+
+        <div class="container">
+
+            <div class="category-heading">
+                <h2>Grocery</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/grocery1.avif" alt="Vegetables">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Fresh Vegetables</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹499</span>
+                            <span class="new-price">₹299</span>
+                            <span class="discount">40% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/grocery2.avif" alt="Fruits">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Fresh Fruits</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹599</span>
+                            <span class="new-price">₹399</span>
+                            <span class="discount">33% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/grocery3.avif" alt="Rice">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Premium Rice</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹899</span>
+                            <span class="new-price">₹699</span>
+                            <span class="discount">22% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/grocery4.avif" alt="Organic Food">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Organic Food Pack</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹1,299</span>
+                            <span class="new-price">₹899</span>
+                            <span class="discount">31% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/grocery5.avif" alt="Spices">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Premium Spices</div>
+                        <div class="rating">4.8 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹799</span>
+                            <span class="new-price">₹499</span>
+                            <span class="discount">38% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/grocery6.avif" alt="Dairy">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Dairy Products</div>
+                        <div class="rating">4.5 ★</div>
+                        <div class="price">
+                            <span class="old-price">₹599</span>
+                            <span class="new-price">₹399</span>
+                            <span class="discount">33% off</span>
+                        </div>
+                        <label for="cart-product-toggle" class="add-cart">Add to Cart</label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         NEWSLETTER
+    ===================================================== -->
+
+    <section class="newsletter">
+
+        <div class="container">
+
+            <h2>
+                Subscribe to Our Newsletter
+            </h2>
+
+            <p>
+                Get the latest offers, new arrivals and exclusive
+                ShopNest deals directly in your inbox.
+            </p>
+
+            <form class="newsletter-form">
+
+                <input type="email" placeholder="Enter your email address" required>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+
+                    <h4>
+                        ShopNest
+                    </h4>
+
+                    <p>
+                        ShopNest is your one-stop online
+                        shopping destination for electronics,
+                        fashion, footwear, books, home products,
+                        beauty and groceries.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <a href="#">Home</a>
+                    <a href="#featured">Featured Products</a>
+                    <a href="#electronics">Electronics</a>
+                    <a href="#men">Men</a>
+                    <a href="#women">Women</a>
+                    <a href="#grocery">Grocery</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Support
+                    </h4>
+
+                    <a href="#">Help Center</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Contact
+                    </h4>
+
+                    <p>
+                        <i class="bi bi-geo-alt"></i>
+                        Kerala, India
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone"></i>
+                        +91 98765 43210
+                    </p>
+
+                    <p>
+                        <i class="bi bi-envelope"></i>
+                        support@shopnest.com
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>
+                        Social Media
+                    </h4>
+
+                    <div class="social-icons">
+
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 ShopNest.
+                All Rights Reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

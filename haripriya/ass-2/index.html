@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNest Static Website</title>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootrstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Seaweed+Script&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- preheader -->
+    <div class="preheader d-flex justify-content-between align-items-center">
+        <div class="preheader-left">
+            <span><i class="fa-regular fa-truck"></i> Free shipping on orders over $50</span>
+        </div>
+
+
+        <div class="preheader-right">
+            <ul class="icon-group d-flex align-items-center mb-0">
+                <li><a href="#"><i class="fa-solid fa-circle-info"></i> Help & Support</a></li>
+                <li><a href="#"><i class="fa-solid fa-location-dot"></i> Store Locator</a></li>
+                <!-- 
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  me-3" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle"> <a class="navbar-brand fs-4" href="#"><i
+                                class="fa-solid fa-cart-flatbed-suitcase"></i> Shop<span>Nest</span></a>
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Sign in</h5>
+                    <p>Welocme back! Please sign in to continue</p>
+                    <form>
+                        <div class="d-flex flex-column gap-1">
+                            <label for="username"></i> Email address:</label>
+                            <input type="text" id="username" name="username" placeholder="Enter your email" required />
+                        </div>
+                        <div class="d-flex flex-column gap-1">
+                            <label for="pass">
+                                <!-- <span class="material-symbols-outlined">lock</span> -->
+                                Password: </label>
+                            <input type="password" id="pass" name="password" minlength="8" required
+                                placeholder="Enter your password" />
+                            <p class="fgt_pwd"><a href="#">Forgert password?</a></p>
+                        </div>
+
+                        <div class="modal-footer justify-content-center">
+                            <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                            <p>Don't have an account?<a href="#">Sign Up</a></p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-4" href="#"><i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                Shop<span>Nest</span></a>
+            <!-- Mobile menu button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+
+                            <li class="dropdown-submenu">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Clothing
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Men</a></li>
+                                    <li><a class="dropdown-item" href="#">Women</a></li>
+                                    <li><a class="dropdown-item" href="#">Kids</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown-submenu">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Footwear
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Men</a></li>
+                                    <li><a class="dropdown-item" href="#">Women</a></li>
+                                    <li><a class="dropdown-item" href="#">Kids</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Books</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Deals</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+                <ul class="icon-group d-flex align-items-center mb-0 ms-3">
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                            <i class="fa-regular fa-user"></i>
+                        </a></li>
+
+                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hero section -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/hero-2.png" class="d-block w-100" alt="...">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Welcome to ShopNest</span>
+                    <h1>Shop. Style.<br> Love. <span>Repeat.</span></h1>
+                    <p>Fine everything you love in our place<br> Quality products at affordable prices</p>
+                    <div class="hero-button">
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                        <a href="#" class="btn btn-secondary">View More</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img src="images/hero-1.png" class="d-block w-100" alt="...">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Everything You Love</span>
+                    <h1>Power Up. <br>Live
+                        <span> Smarter.</span>
+                    </h1>
+                    <p>Discover the latest gadgets and smart tech designed<br> to make everyday life easier, faster, and
+                        more connected.</p>
+                    <div class="hero-button">
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                        <a href="#" class="btn btn-secondary">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/hero-3.png" class="d-block w-100" alt="...">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Welcome to ShopNest</span>
+
+                    <h1>Read More.<br>
+                        Dream<span> Bigger.</span></h1>
+                    <p>Discover inspiring stories, timeless classics,<br> and powerful ideas — all in one place.</p>
+                    <div class="hero-button">
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                        <a href="#" class="btn btn-secondary">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- highlight section -->
+    <section class="highlight-section">
+        <div class="container highlight-boxes">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="highlight-box">
+                        <div class="highlight-icon">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <div class="highlight-text">
+                            <h3>Free Shipping</h3>
+                            <p>On orders over $50</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="highlight-box">
+                        <div class="highlight-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="highlight-text">
+                            <h3>24/7 Support</h3>
+                            <p>We are here to help you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="highlight-box">
+                        <div class="highlight-icon">
+                            <i class="fa-solid fa-arrow-rotate-left"></i>
+                        </div>
+                        <div class="highlight-text">
+                            <h3>Easy Returns</h3>
+                            <p>14-day return policy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="highlight-box">
+                        <div class="highlight-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="highlight-text">
+                            <h3>Secure Payment</h3>
+                            <p>100% secure checkout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- category section -->
+    <section class="category-section">
+        <h2 class="text-center bold mb-4">Shop By Category</h2>
+        <div class="container">
+            <div class="row category-boxes">
+                <div class="col-12 col-sm-6 col-md-3"
+                    style="background-image: url('./images/electronic_devices.png'); ">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <a href="#">
+                        <div class="category-box">
+                            <h3 class="text-dark">Electronics</h3>
+                            <span>Explore More</span>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 " style="background-image: url('./images/cloths.png'); ">
+
+                    <div class="category-icon">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <a href="#">
+                        <div class="category-box">
+                            <h3 class="text-dark">Clothing</h3>
+                            <span>Explore More</span>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-3" style="background-image: url('./images/footware.png'); ">
+                    <div class="category-icon">
+                        <span class="material-symbols-outlined">
+                            steps
+                        </span>
+                    </div>
+                    <a href="#">
+                        <div class="category-box">
+
+                            <h3 class="text-dark">Footware</h3>
+                            <span>Explore More</span>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-3" style="background-image: url('./images/books.png'); ">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <a href="#">
+                        <div class="category-box">
+
+                            <h3 class="text-dark">Books</h3>
+                            <span>Explore More</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- featured products -->
+    <section class="category-section mt-5 pt-3">
+        <h2 class="text-center bold mb-4">Featured Products</h2>
+        <div class="container">
+            <div class="row pb-4">
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="ft-outer p-3">
+                            <img src="images/headphone.webp" alt="Headphone">
+                            <div class="ft-details">
+                                <p class="mb-2 item-name">SONY WH-CH520/BZ IN Bluetooth Headset</p>
+                                <div class="d-flex gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="text-muted">(26k+)</span>
+                                </div>
+                                <div class="price-details d-flex gap-2 mt-2">
+                                    <div class="price">
+                                        <p class="mb-2">₹4,499</p>
+                                    </div>
+                                    <div class="og-price text-muted ">
+                                        <s>₹15999</s>
+                                    </div>
+                                    <div class="discount text-success fw-medium">
+                                        <span>85% off</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cta">
+                                    <button class="fw-medium"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="ft-outer p-3">
+                            <img src="images/puma.jpg" alt="Shoe">
+                            <div class="ft-details">
+                                <p class="mb-2 item-name">PUMA Pounce Lite Res Running Shoes For Men </p>
+                                <div class="d-flex gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="text-muted">(20k+)</span>
+                                </div>
+                                <div class="price-details d-flex gap-2 mt-2">
+                                    <div class="price">
+                                        <p class="mb-2">₹4,999</p>
+                                    </div>
+                                    <div class="og-price text-muted ">
+                                        <s>₹10999</s>
+                                    </div>
+                                    <div class="discount text-success fw-medium">
+                                        <span>85% off</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cta">
+                                    <button class="fw-medium"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="ft-outer p-3">
+                            <img src="images/jacket.png" alt="Jacket">
+                            <div class="ft-details">
+                                <p class="mb-2 item-name">gustave Women Solid Hiking and Trekking Jacket</p>
+                                <div class="d-flex gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="text-muted">(50k+)</span>
+                                </div>
+                                <div class="price-details d-flex gap-2 mt-2">
+                                    <div class="price">
+                                        <p class="mb-2">₹1,899</p>
+                                    </div>
+                                    <div class="og-price text-muted ">
+                                        <s>₹2599</s>
+                                    </div>
+                                    <div class="discount text-success fw-medium">
+                                        <span>15% off</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cta">
+                                    <button class="fw-medium"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="ft-outer p-3">
+                            <img src="images/ikigai-original.png" alt="ikigai">
+                            <div class="ft-details">
+                                <p class="mb-2 item-name">Ikigai - The Japanese Secret to a Long and Happy Life with
+                                    3
+                                    Disc </p>
+                                <div class="d-flex gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="text-muted">(10k+)</span>
+                                </div>
+                                <div class="price-details d-flex gap-2 mt-2">
+                                    <div class="price">
+                                        <p class="mb-2">₹280</p>
+                                    </div>
+                                    <div class="og-price text-muted ">
+                                        <s>₹599</s>
+                                    </div>
+                                    <div class="discount text-success fw-medium">
+                                        <span>53% off</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cta">
+                                    <button class="fw-medium"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="ft-outer p-3">
+                            <img src="images/iphone.png" alt="Fastrack Watch">
+                            <div class="ft-details">
+                                <p class="mb-2 item-name">Apple iPhone 17 (Mist Blue, 256 GB)</p>
+                                <div class="d-flex gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="text-muted">(20k+)</span>
+                                </div>
+                                <div class="price-details d-flex gap-2 mt-2">
+                                    <div class="price">
+                                        <p class="mb-2">₹80,900</p>
+                                    </div>
+                                    <div class="og-price text-muted ">
+                                        <s>₹80,900</s>
+                                    </div>
+                                    <div class="discount text-success fw-medium">
+                                        <span>2% off</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cta">
+                                    <button class="fw-medium"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="ft-outer p-3">
+                            <img src="images/pride-and-prejudice-original.webp" alt="Fastrack Watch">
+                            <div class="ft-details">
+                                <p class="mb-2 item-name">Pride and Prejudice</p>
+                                <div class="d-flex gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="text-muted">(20k+)</span>
+                                </div>
+                                <div class="price-details d-flex gap-2 mt-2">
+                                    <div class="price">
+                                        <p class="mb-2">₹130</p>
+                                    </div>
+                                    <div class="og-price text-muted ">
+                                        <s>₹230</s>
+                                    </div>
+                                    <div class="discount text-success fw-medium">
+                                        <span>49% off</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cta">
+                                    <button class="fw-medium"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="ft-outer p-3">
+                            <img src="images/macbook.webp" alt="Fastrack Watch">
+                            <div class="ft-details">
+                                <p class="mb-2 item-name">MacBook Air M5 13-inch Starlight 512GB</p>
+                                <div class="d-flex gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="text-muted">(20k+)</span>
+                                </div>
+                                <div class="price-details d-flex gap-2 mt-2">
+                                    <div class="price">
+                                        <p class="mb-2">₹149,900</p>
+                                    </div>
+                                    <div class="og-price text-muted ">
+                                        <s>₹169,900</s>
+                                    </div>
+                                    <div class="discount text-success fw-medium">
+                                        <span>10% off</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cta">
+                                    <button class="fw-medium"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <a href="#" class="text-decoration-none">
+                        <div class="ft-outer p-3">
+                            <img src="images/hoodies.jpg" alt="Fastrack Watch">
+                            <div class="ft-details">
+                                <p class="mb-2 item-name">Hoodie</p>
+                                <div class="d-flex gap-2">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="text-muted">(20k+)</span>
+                                </div>
+                                <div class="price-details d-flex gap-2 mt-2">
+                                    <div class="price">
+                                        <p class="mb-2">₹1,499</p>
+                                    </div>
+                                    <div class="og-price text-muted ">
+                                        <s>₹1999</s>
+                                    </div>
+                                    <div class="discount text-success fw-medium">
+                                        <span>10% off</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cta">
+                                    <button class="fw-medium"><i class="fa-solid fa-cart-shopping"></i> Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- newsletter section -->
+    <section class="newsletter pt-5 mt-4 mb-5 pb-3">
+        <div class="container p-4 rounded-4" style="background: #fef1ea;">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center gap-4">
+                    <div class="envelope">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h2 class="fs-4 fw-bold">Subscribe to our newsletter</h2>
+                        <p class="mb-0">Get the latest updates on new products and upcoming sale</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="subscribe d-flex">
+                        <form class="d-flex w-100">
+                            <input class="w-100 p-2" required type="text" id="username" name="username"
+                                placeholder="Enter your Email address">
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <div class="container pt-4 pb-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <a class="navbar-brand fs-4" href="#"><i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                        Shop<span>Nest</span></a>
+                    <p class="pt-3">ShopNest is your one-stop destination for quality products at the best prices.
+                        Happy Shopping!</p>
+                    <span>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <div class="quick-links">
+                        <div class="quick-head">
+                            <h3 class="fs-6">Quick Links</h3>
+                        </div>
+                        <ul class="ps-0 pt-4">
+                            <li><a href="#">Home</a> </li>
+                            <li><a href="#">Shop</a> </li>
+                            <li><a href="#">Categories</a> </li>
+                            <li><a href="#">Deals</a> </li>
+                            <li><a href="#">About</a> </li>
+                            <li><a href="#">Contact</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-contacts">
+                        <div class="cont-head">
+                            <h3 class="fs-6">Contact Us</h3>
+                        </div>
+                        <ul class="ps-0 pt-4">
+                            <li><a href="tel:+12345678900"><i class="fa-solid fa-phone"></i> +1 234 567 8900</a> </li>
+                            <li><a href="maito:support@shopnest.com"><i class="fa-regular fa-envelope"></i>
+                                    support@shopnest.com</a> </li>
+                            <li><a href="#"><i class="fa-solid fa-location-dot"></i> 123 shoping
+                                    street<br>Bangalore<br>765543</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="payment">
+                        <h3 class="fs-6">We Accept</h3>
+
+                        <img class="pt-4"
+                            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-69e7ec.svg"
+                            alt="Visa" class="icon--payment">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

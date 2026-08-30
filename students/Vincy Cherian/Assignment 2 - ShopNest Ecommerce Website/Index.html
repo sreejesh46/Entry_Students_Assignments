@@ -1,0 +1,503 @@
+
+<!-- Ecommerce Website - ShopNest -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNest</title>
+
+    <!-- Custom CSS -->
+    <link href="./style.css" rel="stylesheet" />
+    
+    <!-- Google Font - Vollkorn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header>
+        <!-- NavBar -->
+        <nav id="shopnest-navbar" class="navbar navbar-expand-lg" >
+                        <a class="navbar-brand" href="#">
+                            <img src="./Images/ShopNest Logo.png" alt="ShopNest Logo" />
+                        </a>
+                    
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><b>HOME</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal" href="#"><b>LOGIN</b></a>
+                                </li>
+                                <li class="nav-item">
+                                     <form class="d-flex">
+                                        <b id="search-icon" class="bi bi-search"></b>
+                                        <input class="form-control" type="search" style="margin-left: 10px;" placeholder="Search Products">
+                                    </form>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span id="ShopNest-cart" class="bi bi-cart"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                          
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        
+        <section id="hero">
+            <div id="ShopNest-carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div id="carousel_1" class="carousel-item active">
+                        <p class="carousel-begin-content">WELCOME TO SHOPNEST</p>
+                        <p class="carousel-content-main">Shop More,<br>
+                        Save More.</p>
+                        <p class="carousel-content-sub">Everything you love, at prices you'll adore.</p>
+                        <button id="shopnow">SHOP NOW</button>
+                    </div>
+                    <div id="carousel_2" class="carousel-item">
+                        <p class="carousel-begin-content">NEW SEASON</p>
+                        <p class="carousel-content-main">FRESH FINDS.<br>
+                        JUST FOR YOU.</p>
+                        <p class="carousel-content-sub">Discover the latest trends across <br> fashion, lifestyle & more.</p>
+                        <button id="explorenow">EXPLORE NOW</button>
+                    </div>
+                    <div id="carousel_3" class="carousel-item">
+                        <p class="carousel-begin-content">LIMITED TIME OFFER</p>
+                        <p class="carousel-content-main">BIG BRANDS.<br>
+                        BIGGER DEALS.</p>
+                        <p class="carousel-content-sub">Grab amazing discounts on top brands. <br> Hurry, before its gone!</p>
+                        <button id="view_deal">VIEW DEALS</button>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#ShopNest-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ShopNest-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <aside class="text-center">
+            <p> Limited-time deals available while stocks last!</p>
+        </aside>
+
+        <!-- Featured Products -->
+
+        <section id="featured-pdts-section">
+            <h2 id="featured_pdts">Featured Products</h2>
+            <div class="container">
+                <div class="row g-4 featured-pdt-row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <article class="card h-100">
+                            <a href="" id="feat-pdt-1">
+                                <img src="./Images/feat_pdt_1.png" class="card-img-top mx-auto feat-pdt-img" alt="Featured-Product-1">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Smart Watch</h5>
+                                <p class="card-text"> Stay Connected, Stay Fit </p>
+                                <p>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star"></span>
+                                </p>
+                                <p class="text-decoration-line-through text-muted">$200 </p>
+                                <p class="text-danger fw-bold"> $150</p>
+                                <a href="#" class="btn btn-primary">ADD TO CART</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <article class="card h-100">
+                            <a href="" id="feat-pdt-2">
+                                <img src="./Images/feat_pdt_2.png" class="card-img-top mx-auto feat-pdt-img" alt="Featured-Product-2">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Wireless Headphones</h5>
+                                <p class="card-text"> Pure Sound. No Wires. </p>
+                                <p>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star"></span>
+                                    <span class="bi bi-star"></span>
+                                </p>
+                                <p class="text-decoration-line-through text-muted">$300 </p>
+                                <p class="text-danger fw-bold"> $250</p>
+                                <a href="#" class="btn btn-primary">ADD TO CART</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <article class="card h-100">
+                            <a href="" id="feat-pdt-3">
+                                <img src="./Images/feat_pdt_3.png" class="card-img-top mx-auto feat-pdt-img" alt="Featured-Product-3">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Stylish Backpack</h5>
+                                <p class="card-text"> Carry Style, Everywhere </p>
+                                <p>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star"></span>
+                                </p>
+                                <p class="text-decoration-line-through text-muted">$400 </p>
+                                <p class="text-danger fw-bold"> $300</p>
+                                <a href="#" class="btn btn-primary">ADD TO CART</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <article class="card h-100">
+                            <a href="" id="feat-pdt-4">
+                                <img src="./Images/feat_pdt_4.png" class="card-img-top mx-auto feat-pdt-img" alt="Featured-Product-4">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Casual Sneakers</h5>
+                                <p class="card-text"> Comfort That Moves </p>
+                                <p>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star"></span>
+                                    <span class="bi bi-star"></span>
+                                </p>
+                                <p class="text-decoration-line-through text-muted">$270 </p>
+                                <p class="text-danger fw-bold"> $200</p>
+                                <a href="#" class="btn btn-primary">ADD TO CART</a>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+
+                <div class="row g-4 featured-pdt-row">
+                    
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <article class="card h-100">
+                            <a href="" id="feat-pdt-5">
+                                <img src="./Images/feat_pdt_5.png" class="card-img-top mx-auto feat-pdt-img" alt="Featured-Product-5">
+                            </a>                   
+                            <div class="card-body">
+                                <h5 class="card-title">Classic Analog Watch</h5>
+                                <p class="card-text"> Timeless Elegance </p>
+                                <p>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star"></span>
+                                </p>
+                                <p class="text-decoration-line-through text-muted">$400 </p>
+                                <p class="text-danger fw-bold"> $300</p>
+                                <a href="#" class="btn btn-primary">ADD TO CART</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <article class="card h-100">
+                            <a href="" id="feat-pdt-6">
+                                <img src="./Images/feat_pdt_6.png" class="card-img-top mx-auto feat-pdt-img" alt="Featured-Product-6">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Indoor Plant</h5>
+                                <p class="card-text"> Decorate. Refresh. Relax.</p>
+                                <p>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star"></span>
+                                </p>
+                                <p class="text-decoration-line-through text-muted">$400 </p>
+                                <p class="text-danger fw-bold"> $300</p>
+                                <a href="#" class="btn btn-primary">ADD TO CART</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <article class="card h-100">
+                            <a href="" id="feat-pdt-7">
+                                <img src="./Images/feat_pdt_7.png" class="card-img-top mx-auto feat-pdt-img" alt="Featured-Product-7">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Portable Bluetooth Speaker</h5>
+                                <p class="card-text"> Big Sound. Anywhere.</p>
+                                <p>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                </p>
+                                <p class="text-decoration-line-through text-muted">$320 </p>
+                                <p class="text-danger fw-bold"> $270</p>
+                                <a href="#" class="btn btn-primary">ADD TO CART</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <article class="card h-100">
+                            <a href="" id="feat-pdt-8">
+                                <img src="./Images/feat_pdt_8.png" class="card-img-top mx-auto feat-pdt-img" alt="Featured-Product-8">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Noise Cancelling Headphones</h5>
+                                <p class="card-text"> Focus on What Matters. </p>
+                                <p>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star-fill"></span>
+                                    <span class="bi bi-star"></span>
+                                </p>
+                                <p class="text-decoration-line-through text-muted">$150 </p>
+                                <p class="text-danger fw-bold"> $80</p>
+                                <a href="#" class="btn btn-primary">ADD TO CART</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Browse by category Products -->
+        <section id="categories">
+            <h2 id="featured_pdts">Browse by Category</h2>
+            <div class="container">
+                <div class="row g-4 featured-pdt-row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100">
+                            <a href="" id="category-1">
+                                <img src="./Images/books category.png" class="card-img-top mx-auto feat-pdt-img" alt="Category-1">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Books</h5>
+                                <p class="card-text"> Discover new worlds, one page at a time. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100">
+                            <a href="" id="category-2">
+                                <img src="./Images/clothing_category.png" class="card-img-top mx-auto feat-pdt-img" alt="Category-2">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Clothing</h5>
+                                <p class="card-text"> Trendy styles for every mood and moment. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100">
+                            <a href="" id="category-3">
+                                <img src="./Images/category-3.png" class="card-img-top mx-auto feat-pdt-img" alt="Category-3">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Bags & Wallets</h5>
+                                <p class="card-text"> Carry Style, Everywhere </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100">
+                            <a href="" id="category-4">
+                                <img src="./Images/category-4.png" class="card-img-top mx-auto feat-pdt-img" alt="Category-4">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Footwear</h5>
+                                <p class="card-text"> Step Into Comfort </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row g-4 featured-pdt-row">
+                    
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100">
+                            <a href="" id="category-5">
+                                <img src="./Images/category-5.png" class="card-img-top mx-auto feat-pdt-img" alt="Category-5">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Beauty & Personal Care</h5>
+                                <p class="card-text"> Feel Good, Look Great </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100">
+                            <a href="" id="category-6">
+                                <img src="./Images/category-6.png" class="card-img-top mx-auto feat-pdt-img" alt="Category-6">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Home & Decor</h5>
+                                <p class="card-text"> Make Your Space Yours </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100">
+                            <a href="" id="category-7">
+                                <img src="./Images/category-7.png" class="card-img-top mx-auto feat-pdt-img" alt="Category-7">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Electronics</h5>
+                                <p class="card-text"> Power Your Everyday </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100">
+                            <a href="" id="category-8">
+                                <img src="./Images/category-8.png" class="card-img-top mx-auto feat-pdt-img" alt="Category-8">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Men's Fashion</h5>
+                                <p class="card-text"> Style Made Simple </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Newsletter Section -->
+        <section id="newsletter">
+            <div class="newsltr-section">
+                    <h2 id="newsletter-title">Newsletter SignUp</h2>
+                    <div class="container">
+                        <div class="row h-40 justify-content-center">
+                            <div id="newsltr-items" class="col-12 col-md-12 col-lg-12">
+                                    <label id="email_id_label" for="cust_email_id">Email ID</label>
+                                    <input type="email" id="cust_email_id" placeholder="Enter your Email ID" required />
+                                    <button id="btn-subscribe" type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section">      
+        <div class="container">
+            <div class="row h-100 gt-6">
+                <div class="col-12 col-lg-3 col-md-12" style="padding-bottom: 10px;">
+                        <h5 id="quick_link">Quick Links</h5>
+                            <ul id="footer-links" class="ms-auto">
+                                <li class="nav-item">
+                                    <a class="footer-nav-link" href="#">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="footer-nav-link" data-bs-toggle="modal" data-bs-target="#searchModal" href="">SEARCH</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="footer-nav-link" data-bs-toggle="modal" data-bs-target="#loginModal" href="">LOGIN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="footer-nav-link" href="">
+                                        CART
+                                    </a>
+                                </li>
+                            </ul>
+                        
+                </div>
+                <div class="col-12 col-lg-3 col-md-12" style="padding-bottom: 10px;">
+                        <h5 id="about-title">About ShopNest</h5>
+                        <p id="about-dtl"> ShopNest is your one-stop destination for quality products, great deals, and effortless 
+                            shopping. We bring together everyday essentials, fashion, electronics, and more — all in one convenient place.
+                        </p>
+                        <p>Shop Smart. Live Better. </p>
+                </div>
+                <div class="col-12 col-lg-1 col-md-12"></div>
+                 <div class="col-12 col-lg-3 col-md-12" style="padding-bottom: 10px;">
+                        <h5 id="contact-title">Contact Us</h5>
+                        <h6>ShopNest</h6>
+                        <p>123 Market Street, Kochi,<br>
+                        Kerala – 682001, India <br>
+                        <br>
+                        <span class="bi bi-telephone"></span> Phone: +91 98765 43210 <br>
+                        <span class="bi bi-envelope"></span> Email: support@shopnest.com <br>
+                        <span class="bi bi-clock"></span> Customer Support:<br> Monday – Saturday, 9:00 AM – 6:00 PM</p> 
+                </div>
+                 <div class="col-12 col-lg-2 col-md-12" style="padding-bottom: 10px;">
+                        <h5 id="social-heading">Follow Us</h5>
+                        <div class="social-section">
+                            <a href=""><img src="./Images/fb-icon-1.png" alt="Facebook" width="30px" height="30px" border-radius="5px" /></a>
+                            <a href=""><img src="./Images/insta-icon-2.jpg" alt="Instagram"width="30px" height="30px" /></a>
+                            <a href=""><img src="./Images/youtube-icon.png" alt="Youtube" width="30px" height="30px" /></a>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" style="text-align: center; padding-top: 10px;">
+                    &copy; ShopNest Limited - 2026
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">LOGIN</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label for="userName">Username</label>
+        <input type="text" id="userName" /><br><br>
+        <label for="userPassword">Password</label>
+        <input type="password" id="userPassword" />
+        <br><br>
+        <a id="forgot-pwd" href="">Forgot Password</a>
+        <a id="new_account" href="">Create an Account</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+   
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</body>
+</html>

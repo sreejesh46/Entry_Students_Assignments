@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e8;
+    color: #183b43;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #073b4c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    color: #f4c95d;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+/* Header content */
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1,
+.header-content h2,
+.header-content nav {
+    display: inline-block;
+    margin: 15px;
+}
+
+/* Navigation */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #f4c95d;
+}
+
+/* Main */
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Menu Sections */
+
+section {
+    margin: 30px 0;
+    padding: 20px;
+}
+
+section h2 {
+    color: #073b4c;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* Food Cards */
+
+.card {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid #d6b45c;
+}
+
+/* Food Images */
+
+.card img {
+    width: 250px;
+    height: 250px;
+}
+
+/* Food Name */
+
+.card h3 {
+    color: #073b4c;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Description */
+
+.card p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Price */
+
+.card p:last-child {
+    color: #c46b27;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Card Hover */
+
+.card:hover {
+    border-color: #073b4c;
+}
+/* About us */
+#about{
+    background-color: white;
+    padding:30px;
+    margin:30px auto;
+    border: 2px solid #d6b45c;
+    width: 80%;
+}
+#about h2{
+    color:#073b4c;
+    font-weight: 700;
+}
+#about p{
+    color:#555555;
+    line-height: 1.6;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #073b4c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer h3 {
+    color: #f4c95d;
+    font-weight: 700;
+}
+
+footer p {
+    color: white;
+}

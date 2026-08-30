@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Kart.Co</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+
+
+<style>
+    .textprimary {
+    background: linear-gradient(to bottom, #272a88 0%, #949ae3 35%, #6f6ac5 65%, #2c2d54 100%) !important;
+    -webkit-background-clip: text !important;
+     background-clip: text !important;
+     -webkit-text-fill-color: transparent !important;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5)) !important;
+    font-weight: bold;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60%;
+    /* adjust this */
+}
+
+/* Order now, add to cart button*/
+.custom-btn1{
+  border:2px solid #5f5bc7;/* Change to a darker shade of Blue*/
+  color:#120ab2; /* Change to a darker shade of Blue */
+ background-color: transparent;
+  transition: all 0.3s ease;
+}
+.custom-btn1:hover {
+    background-color: #5f66ea;
+    transform: scale(1.05);
+    color: white;
+}  /* ✅ CLOSE IT */
+
+.product-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.product-img:hover {
+  transform: scale(1.05);
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+}
+.navbar-nav .nav-link {
+  color: #000;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #1a5276;                 /* darker blue */
+  background-color: #AED6F1;      /* pastel blue */
+  transform: scale(1.05);
+}
+
+/* Active link style */
+.navbar-nav .nav-link.active {
+  color: #154360;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+    
+   <nav class="navbar navbar-expand-lg sticky-top" 
+     style="background-color: #D6EAF8;">
+  <div class="container-sm">
+    <a class="navbar-brand d-flex align-items-center" href="#navlinkactive" style="font-family: 'Brush Script MT', cursive; font-size: 50px;">
+      <img src="https://globalprimenews.com/wp-content/uploads/2022/08/IMG_20220801_205340-777x437.png" alt="logo E-Kart.co" width="50" height="50" class="me-2">
+      <span class="text-primary">E-Kart.co</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Quicklinks">Quick links</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Quick-Contact">Contact</a>
+        </li>
+      </ul>
+      <!--Right side whatsapp button-->
+      <a href="https://api.whatsapp.com/send?phone=+919999999999" target="_blank" class="btn btn-success d-flex align-items-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" width="20" height="20" class="me-2">
+        Order with us
+      </a>
+    </div>
+  </div>
+</nav>
+
+ <div id="home" class="text-center" style="padding-top:10rem;padding-bottom:10rem; background-image: url('https://media.istockphoto.com/id/1212513299/photo/asian-happy-portrait-beautiful-cute-young-woman-teen-smiling-standing-with-sunglasses-excited.jpg?s=170667a&w=0&k=20&c=v-WQl1yY-pLGx3OW_WxXvQwQcow-KTR14j0SmrKdvbk='); background-size:cover; background-position: center; background-repeat: no-repeat;">
+      
+        <!--logo-->
+      <img src="https://globalprimenews.com/wp-content/uploads/2022/08/IMG_20220801_205340-777x437.png" alt="logo EKart.co"  class="img-fluid mb-4" style="max-width: 120px;display: block; margin: 0 auto;">
+      <!--restaurant name-->
+      <span class="text-primary" style="font-family: 'Times New Roman', cursive; font-size: 50px; display:Centre; justify-content: center:">E-Kart.co</span>
+        <p class="hero-tagline mb-4" style="display:center; justify-content: center;"><b>Feel the goodness</p>
+        <div class="btn-container"> 
+          <a href="#Quicklinks" class="btn custom-btn1 rounded-pill px-4 py-2">Order Now</a>
+          
+          <form> 
+         <div class="btn custom-btn1 rounded-pill px-10"> 
+           <input type="text" class="form-control" id="name" placeholder="Search for">
+          </div>
+
+          </form>
+         
+</a>
+
+        </div>
+    </div>
+</a> 
+        </div>
+<!--Quick links -->
+
+ <div id="Quicklinks" class="py-5" 
+     style="background-image: url('https://wallpapers.com/images/hd/pastel-yellow-background-qpkrq6e0agpwhi9e.jpg'); background-size: cover;">
+
+  <div class="container text-center">
+
+    <h1 style="color:#0b1091; font-family:'Times New Roman'; font-size:50px;">
+      Quick Links
+    </h1>
+
+    <p style="color:#0d3495;">Wear The Comfortable</p>
+
+    <!-- Buttons -->
+    <div class="mb-4">
+      <a href="#Anarkali" class="btn btn-dark rounded-pill px-4 py-2 fw-bold">Clothing</a>
+      <a href="#PUMASHOES" class="btn btn-dark rounded-pill px-4 py-2 fw-bold">Footwear</a>
+      <a href="#MK" class="btn btn-dark rounded-pill px-4 py-2 fw-bold">Bags</a>
+      <a href="#Police" class=" btn btn-dark rounded-pill px-4 py-2 fw-bold">Watches</a>
+      <a href="#Bose" class="btn btn-dark rounded-pill px-4 py-2 fw-bold">Electronics</a>
+      <a href="#Whenbreathbecomesair" class="btn btn-dark rounded-pill px-4 py-2 fw-bold">Books</a>
+    </div>
+
+    <!-- CLOTHING -->
+    <div class="row">
+
+      <div id="Anarkali" class="col-md-4 mb-4">
+        <img src="https://www.shreekama.com/cdn/shop/articles/a-beautifully-styled-anarkali-suit-on-a-stunning-m-wauByXo8QV-LML_fmxCCHw-q0XPUMKwQnG3zgCPPAHZ8Q.jpg?v=1723543111&width=3000"
+             class="product-img">
+        <h4 class="mt-3">Anarkali</h4>
+        <p>₹2399</p>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+
+      <div class="col-md-4 mb-4">
+        <img src="https://www.lacesandfrills.in/cdn/shop/files/P349_1_76139f21-13f2-4d34-bd3b-2bff5bfa9564.png?v=1770963799&width=800"
+             class="product-img">
+        <h4 class="mt-3">Jaipur Cotton Kurti</h4>
+        <p>₹1999</p>
+         <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+
+
+      <div class="col-md-4 mb-4">
+        <img src="https://images.herzindagi.info/image/2024/Jul/block-printed-cotton-kurti.jpg"
+             class="product-img">
+        <h4 class="mt-3">Block Print Kurti</h4>
+        <p>₹2399</p>
+         <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+
+    </div>
+
+  </div>
+</div>
+ <!-- FOOTWEAR -->
+    <div class="row"
+     style="background-image: url('https://wallpapers.com/images/hd/pastel-yellow-background-qpkrq6e0agpwhi9e.jpg'); background-size: cover;">
+
+      <div id="PUMASHOES" class="col-md-4 mb-4 text-center">
+        <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_75,w_1080/v1/assets/images/23250880/2023/5/20/072ce33e-1f72-43bd-8361-2bf9126873931684574883000WarrowWomensSneakers1.jpg"
+             class="product-img">
+        <h4 class="mt-3">Puma Shoes</h4>
+        <p>₹2599</p>
+        <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+
+      <div class="col-md-4 mb-4 text-center">
+        <img src="https://i5.walmartimages.com/seo/loopsun-Summer-Sandals-Womens-Womens-Clearance-Women-s-Arch-support-Shoes-Ladies-Beach-Orthopedic-Non-Slip-Causal_af646232-2e9e-4ef2-824f-515c1bdce26c.a9c6b1fdb81d1779d565fd1f2bbbce0d.jpeg"
+             class="product-img">
+        <h4 class="mt-3">Sandals</h4>
+        <p>₹999</p>
+         <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+
+      <div class="col-md-4 mb-4 text-center">
+        <img src="https://i.etsystatic.com/40023856/r/il/8ad6e6/6969660667/il_1080xN.6969660667_aar8.jpg"
+             class="product-img">
+        <h4 class="mt-3">Kolhapuri Chappel</h4>
+        <p>₹2699</p>
+        <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- BAGS -->
+    <div class="row"
+     style="background-image: url('https://wallpapers.com/images/hd/pastel-yellow-background-qpkrq6e0agpwhi9e.jpg'); background-size: cover;">
+
+
+      <div id="MK" class="col-md-4 mb-4 text-center">
+        <img src="https://media.karousell.com/media/photos/products/2022/11/10/michael_kors_mercer_signature__1668091041_54a9b795_progressive"
+             class="product-img">
+        <h4 class="mt-3">Michael Kors</h4>
+        <p>₹4999</p>
+       <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+
+      <div class="col-md-4 mb-4 text-center">
+        <img src="https://i5.walmartimages.com/seo/Gucci-GG-Marmont-Small-Shoulder-Bag-Black-Matelass-Leather-Handbag-Women-New_058de0f1-286c-4afd-ac63-7b007755b68f.ee68ea00cabcc411ed54a09483cf0689.png"
+             class="product-img">
+        <h4 class="mt-3">Gucci</h4>
+        <p>₹895</p>
+        <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+
+      <div class="col-md-4 mb-4 text-center">
+        <img src="https://images.openai.com/static-rsc-4/U0khTjMBtxSV4A-ue_z8MWCjOYeFCmAV9hvumz-rSLJ1XoA7bqY98wCf4T1b_PE7AtPZBjWBmF69gysSYsskILCc43UlYxoFtV09HSSn7Fq6mXurDAv9j_RrFwhpOG4K4x1PvCZhql0_5HkrPSspGIZJ8zBtBAaP51CauuDN6CgFhzdXbBx2-FKF0tiMuJWp?purpose=fullsize"
+             class="product-img">
+        <h4 class="mt-3">Coach</h4>
+        <p>₹1899</p>
+        <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+
+    </div>
+
+  </div>
+</div>
+<!-- watches-->
+    <div class="row"
+     style="background-image: url('https://wallpapers.com/images/hd/pastel-yellow-background-qpkrq6e0agpwhi9e.jpg'); background-size: cover;">
+
+
+      <div id="Police" class="col-md-4 mb-4 text-center">
+        <img src="https://f.nooncdn.com/p/pzsku/Z7853BF5AC9FE51111365Z/45/_/1739277206/e7fc3125-e9e6-44bf-8ec6-5512a2f92b84.jpg?format=webp&width=800"
+             class="product-img">
+        <h4 class="mt-3">Police</h4>
+        <p>₹13999</p>
+       <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+
+      <div class="col-md-4 mb-4 text-center">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/u/p/s/1-1805qm04-titan-men-original-imaguyxhb9gsp7hk.jpeg?q=70"
+             class="product-img">
+        <h4 class="mt-3">Titan</h4>
+        <p>₹14955</p>
+        <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+      <div class="col-md-4 mb-4 text-center">
+        <img src="https://th.bing.com/th/id/R.b8ec3dab9d86e16103e02d6cf8e8db49?rik=o9zBdG%2fqIkU3Tg&riu=http%3a%2f%2fi956.photobucket.com%2falbums%2fae44%2fmsalada%2fFossilWatchesWomen%2fFossilWatchesWomen11.gif&ehk=jo39wt6pl3sQP3xqNX5BntqcuEBTOf6qMlZgDnby8Yw%3d&risl=&pid=ImgRaw&r=0"
+             class="product-img">
+        <h4 class="mt-3">Fossil</h4>
+        <p>₹12495</p>
+        <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+    </div>
+
+  </div>
+</div>
+<!-- Electronics-->
+    <div class="row"
+     style="background-image: url('https://wallpapers.com/images/hd/pastel-yellow-background-qpkrq6e0agpwhi9e.jpg'); background-size: cover;">
+
+
+      <div id="Bose" class="col-md-4 mb-4 text-center">
+        <img src="https://gigabeat.com/wp-content/uploads/2025/02/anc-5-768x512.jpg"
+             class="product-img">
+        <h4 class="mt-3">Bose Headset</h4>
+        <p>₹31723</p>
+       <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+
+      <div class="col-md-4 mb-4 text-center">
+        <img src="https://www.geeky-gadgets.com/wp-content/uploads/2025/09/galaxy-s26-ultra-camera-enhancements-2025.webp"
+             class="product-img">
+        <h4 class="mt-3">Samsung S26 Ultra</h4>
+        <p>₹144999</p>
+        <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+      <div class="col-md-4 mb-4 text-center">
+        <img src="https://cdn.pixabay.com/photo/2017/08/07/14/39/laptop-2604524_1280.jpg"
+             class="product-img">
+        <h4 class="mt-3">Apple Macbook</h4>
+        <p>₹142363</p>
+        <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+    </div>
+
+  </div>
+</div>
+<!-- Books-->
+    <div class="row"
+     style="background-image: url('https://wallpapers.com/images/hd/pastel-yellow-background-qpkrq6e0agpwhi9e.jpg'); background-size: cover;">
+
+
+      <div id="Whenbreathbecomesair" class="col-md-4 mb-4 text-center">
+        <img src="https://wp.penguin.co.uk/wp-content/uploads/2022/04/When-Breath-Becomes-Air_Hero-Desktop_Penguin.jpg"
+             class="product-img">
+        <h4 class="mt-3">When Breath Becomes Air</h4>
+        <p>₹349</p>
+       <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+
+      <div class="col-md-4 mb-4 text-center">
+        <img src="https://bookiestalk.com/wp-content/uploads/2022/06/Who-Will-Cry-When-You-Die-Book_Image2022-1170x658.jpg"
+             class="product-img">
+        <h4 class="mt-3">Who will Cry When You Die</h4>
+        <p>₹198</p>
+        <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+      <div class="col-md-4 mb-4 text-center">
+        <img src="https://th.bing.com/th/id/R.4fec13d1990c497d381b159933fdf75f?rik=qpAziT8riJJ5gA&riu=http%3a%2f%2finvestarbd.azurewebsites.net%2fwp-content%2fuploads%2f2023%2f07%2fBook-Summary-22Rich-Dad-Poor-Dad22-by-Robert-Kiyosaki.png&ehk=AXVc64%2fLluwQspRmpRfVcBl4kG7gs%2fW%2bCoLY1Y5C0BI%3d&risl=&pid=ImgRaw&r=0"
+             class="product-img">
+        <h4 class="mt-3">Rich Dad Poor Dad</h4>
+        <p>₹250</p>
+        <a class="btn custom-btn1 rounded-pill px-4 py-2 me-2">Shop Now</a>
+  <a class="btn custom-btn1 rounded-pill px-4 py-2">View Deals</a>
+</div>
+    </div>
+
+  </div>
+</div>
+   <div id="Quick-Contact"style="position: absolute; left: 0; right:0; transform: translateY(150px); text-align: center; padding-top: 4rem; padding-bottom: 10rem; background-image: url('https://th.bing.com/th/id/OIGP.JUQyAnJTy9C3F1oxCi0X?r=0&pid=ImgGn'); background-size: cover; background-position: center; background-repeat: no-repeat">
+    <h2 class="text-primary" Style="font-family: 'Times New Roman', Times, serif; font-size: 50px;">Quick Contact</h2>
+    <h3 class="text-primary" Style="font-family: 'Times New Roman', Times, serif; font-size: 30px;">Contact EKart.co. Wear the comfortable </h3>
+   <div class="container d-flex justify-content-center flex-column p-3">
+       
+      <footer class="text-primary py-4" style=" bottom: 10px;top: 50px; width: 100%; align-items: left; flex-direction: column;justify-content-sm-evenly:">
+       <p class="mb-0" style="font-family: 'Calibri', cursive; font-size: 24px;
+        d-flex flex-column mb-3">&copy; 2026 EKart.co. All rights reserved.  </p>
+        <p class="mb-0" style="font-family: 'Calibri', cursive; font-size: 24px;
+        d-flex flex-column mb-3">Contact: +91 9999999999 | Email:info@EKart.co.com </p>
+        <p class="mb-0" style="font-family: 'Calibri', cursive; font-size: 24px;
+        d-flex flex-column mb-3">Address: 123, Main Street City, State, Country</p>
+        <p class="mb-0" style="font-family: 'Calibri', cursive; font-size: 24px;
+        d-flex flex-column mb-3">Follow us on: </p>
+          <a href="https://www.facebook.com/EKart.co" target="_blank" class="text-primary mx-2">Facebook</a> |
+          <a href="https://www.instagram.com/EKart.co" target="_blank" class="text-primary mx-2">Instagram</a> |
+          <a href="https://www.twitter.com/EKart.co" target="_blank" class="text-primary mx-2">Twitter</a>
+          <p class="mb-0" style="font-family: 'Calibri', cursive; font-size: 24px;
+       
+        <!--logo at centre-->
+        <div class="mt-3">
+      <img src="https://globalprimenews.com/wp-content/uploads/2022/08/IMG_20220801_205340-777x437.png" alt="Ekart.co"class="img-fluid" style="max-width:100px">
+       </a> 
+       </footer>
+       </html>
